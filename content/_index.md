@@ -1,7 +1,7 @@
-# Lien Zhu's Blog Homepage
+[![GitHub](images/github-logo.png)](https://github.com/lienzhuzhu)
 
 ```python
 print("Hello")
 ```
 
-There is nothing interesting here.
+Chewing the fat.
