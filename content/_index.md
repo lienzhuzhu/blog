@@ -1,7 +1,4 @@
-[![GitHub](images/github-logo.png)](https://github.com/lienzhuzhu)
-
-```python
-print("Hello")
+```bash
+$ whoami
+lien zhu
 ```
-
-Chewing the fat.
