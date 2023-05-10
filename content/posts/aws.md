@@ -6,6 +6,7 @@ description = "A comparison study of AWS EC2 T2 machines."
 tags = ["aws","performance","web",]
 +++
 
+
 Is AWS EC2 Large worth its 500% price tag compared to the EC2 Micro?
 
 
