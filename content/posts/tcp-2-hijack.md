@@ -16,7 +16,7 @@ In this second installment, we will hijack the `telnet` connection and execute a
 
 # Setup
 
-The set up is the same as the [previous post](/blog/content/posts/tcp-attack-lab).
+The set up is the same as the [previous post](/blog/posts/tcp-attack-lab).
 
  
 # Hijacking a `telnet` Connection
