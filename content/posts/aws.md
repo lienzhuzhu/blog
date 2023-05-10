@@ -1,13 +1,8 @@
 +++
-title = "Aws"
-date = "2023-05-09T23:55:33-05:00"
+title = "AWS EC2 Showdown"
+date = "2022-07-15"
+description = "A comparison study of AWS EC2 T2 machines."
 
-#
-# description is optional
-#
-# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
-
-tags = ["markdown","syntax",]
+tags = ["aws","performance",]
 +++
 
-This is a page about »Aws«.
