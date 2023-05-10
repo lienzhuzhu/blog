@@ -3,21 +3,10 @@ title = "AWS EC2 Comparison"
 date = "2022-07-15"
 description = "A comparison study of AWS EC2 T2 machines."
 
-tags = ["aws","performance",]
+tags = ["aws","performance","web",]
 +++
 
 Is AWS EC2 Large worth its 500% price tag compared to the EC2 Micro?
-
-<div class="logo-container">
-    <img 
-        src="/images/ec2-logo.png" 
-        alt="ec2 logo" 
-    class="logo">
-    <img 
-        src="/images/2022-07-15-aws/apache.png" 
-        alt="apache logo" 
-    class="logo">
-</div>
 
 
 # Motivation
@@ -38,49 +27,38 @@ Apache Bench (ab) was run using a third AWS EC2 T2 Micro instance running Apache
 
 Figure 1 shows the requests per second (Fig. 1a) and time per request (Fig. 1b) that Apache was able to handle the requests on each instance.
 
- <div class="halves-container">
-    <figure>
-        <img src="/images/2022-07-15-aws/requests.png" alt="graph" class="figure-img">
-        <figcaption class="figure-caption">
-            Figure 1a. Requests per second when Apache serves three file types on different 
-            EC2 instances. Time per request was measured across all concurrent requests.
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/images/2022-07-15-aws/time.png" alt="graph" class="figure-img">
-        <figcaption class="figure-caption">
-            Figure 1b. Time per request when Apache serves three file types on different 
-            EC2 instances. Time per request was measured across all concurrent requests.
-        </figcaption>
-    </figure>
-</div>
+!["requests per second"](/blog/images/aws/requests.png)
+
+Figure 1a. Requests per second when Apache serves three file types on different EC2 instances. 
+
+---
+
+!["time per request"](/blog/images/aws/time.png)
+
+Figure 1b. Time per request was measured across all concurrent requests.
+
+---
 
 To visualize the passage of time as the concurrent requests were fulfilled, GNUPlot was used to graph cumulative total time taken as requests were completed (Figure 2). The micro and large instances are virtually matched in terms of cumulative distribution and total time taken for all three content types.
 
-<div class="thirds-container">
-    <figure>
-        <img src="/images/2022-07-15-aws/html.png" alt="graph" class="figure-img">
-        <figcaption class="figure-caption">
-            Figure 2a. Time passed as Apache serves concurrent requests of an HTML page on EC2 T2 
-            Micro and Large instances.
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/images/2022-07-15-aws/php.png" alt="graph" class="figure-img">
-        <figcaption class="figure-caption">
-            Figure 2b. Time passed as Apache handles concurrent requests of a PHP script on EC2 T2 
-            Micro and Large instances. 
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/images/2022-07-15-aws/jpeg.png" alt="graph" class="figure-img">
-        <figcaption class="figure-caption">
-            Figure 2c. Time passed as Apache serves concurrent requests of a JPG file on EC2 T2 
-            Micro and Large instances.
-        </figcaption>
-    </figure>
-</div>
+!["html"](/blog/images/aws/html.png)
+       
+Figure 2a. Time passed as Apache serves concurrent requests of an HTML page on EC2 T2 Micro and Large instances.
 
+---
+       
+!["php"](/blog/images/aws/php.png)
+
+Figure 2b. Time passed as Apache handles concurrent requests of a PHP script on EC2 T2 Micro and Large instances. 
+
+---
+       
+!["jpeg"](/blog/images/aws/jpeg.png)
+
+Figure 2c. Time passed as Apache serves concurrent requests of a JPG file on EC2 T2 Micro and Large instances.
+
+---
+      
 
 # Discussion
 
