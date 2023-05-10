@@ -16,7 +16,7 @@ In the third and final installment, we will go a step further to execute not an 
 
 # Setup
 
-The set up can be found in the [overview post](/blog/posts/tcp-attack-lab).
+The set up can be found in the [overview post](/blog/posts/tcp-0-attack-lab).
 
  
 # Hijacking a `telnet` Connection to Obtain a Reverse Shell

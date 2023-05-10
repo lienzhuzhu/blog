@@ -16,7 +16,7 @@ In the first part of this series, we will conduct a TCP Reset attack on the `tel
 
 # Setup
 
-Please see the series [overview post](/blog/posts/tcp-attack-lab) for setup instructions.
+Please see the series [overview post](/blog/posts/tcp-0-attack-lab) for setup instructions.
 
  
 # Resetting a `telnet` Connection
