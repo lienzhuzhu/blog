@@ -10,7 +10,7 @@ Is AWS EC2 Large worth its 500% price tag compared to the EC2 Micro?
 
 <div class="logo-container">
     <img 
-        src="/images/2022-07-15-aws/ec2-logo.png" 
+        src="/images/ec2-logo.png" 
         alt="ec2 logo" 
     class="logo">
     <img 
