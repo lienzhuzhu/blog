@@ -35,7 +35,7 @@ Select the bridge interface.
 
 Logging in to the `telnet` server (Remember: User 2) from the client generates network traffic that we will use to construct the hijack packet. 
 
-!["telnet"](/images/tcp-reverse/telnet.png)
+!["telnet"](/blog/images/tcp-reverse/telnet.png)
 
 The telnet connection between User 1 and User 2.
 
