@@ -37,13 +37,12 @@
   </ul>
   {{ if .Data.Singular }}
   {{else}}
-    <small>
-      <div>
-        {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
-        {{ end }}
-      </div>
-    </small>
+    <div style="margin-top:1em;">
+      <span><strong>Tags:</strong></span>
+      {{ range .Site.Taxonomies.tags }}
+      <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+      {{ end }}
+    </div>
   {{ end }}
 </content>
 {{ end }}
