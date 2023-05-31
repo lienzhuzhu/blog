@@ -11,7 +11,7 @@ In this series, we will explore the stack-based buffer overflow attack with 4 co
 
 This series focuses on stack-based buffer overflow. Learning heap-based buffer overflow is a TODO.
 
-The [first] post assumes no protections are enabled. Then we will think about how to exploit systems that have either Address Space Layout Randomization (ASLR) or No-Execute (NX) protections as well as a system that has both protections enabled.
+The [first]() post assumes no protections are enabled. Then we will think about how to exploit systems that have either Address Space Layout Randomization (ASLR) or No-Execute (NX) protections as well as a system that has both protections enabled.
 
 
 # Process Memory Layout
@@ -30,3 +30,8 @@ The section called the stack grows downward at run-time as functions are called.
 !["https://hackmag.com/security/stack-overflow/"](/blog/images/simple-bof/stack.png)
 
 We will take control of the return address by overwriting the value by overflowing a local buffer variable in the function body.
+
+
+# Overwriting the return address
+
+In the first post of the series, we will overwrite the return address on a system that has no protections enabled.
