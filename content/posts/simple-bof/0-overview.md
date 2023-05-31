@@ -18,7 +18,7 @@ The [first]() post assumes no protections are enabled. Then we will think about 
 
 One of the abstractions that the operating system provides to each process is the virtualization of memory, which makes it appear as if each process has full access to the total memory space, and has the same range of memory addresses available for use data storage.
 
-The following diagram from Randall Bryant adn David O'Hallaron's book _Computer Systems: A Programmer's Perspective_ displays the address space layout.
+The following diagram from Randall Bryant and David O'Hallaron's book _Computer Systems: A Programmer's Perspective_ displays the address space layout.
 
 !["Computer Systems: A Programmer's Perspective by Randall Bryant and David O'Hallaron"](/blog/images/simple-bof/memory.png)
 
@@ -29,8 +29,7 @@ The section called the stack grows downward at run-time as functions are called.
 
 !["https://hackmag.com/security/stack-overflow/"](/blog/images/simple-bof/stack.png)
 
-We will take control of the return address by overwriting the value by overflowing a local buffer variable in the function body.
-
+We will take control of the return address by overwriting the value by overflowing a local buffer variable in the function body. This is possible in programs that use vulnerable functions like `strcpy()`, which blindly copy data into buffers without considering the size of the destination. If the source content is larger than the destination, the contents will overwrite stack memory beyond the destination buffer.
 
 # Overwriting the return address
 
