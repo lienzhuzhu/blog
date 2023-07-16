@@ -1,4 +1,4 @@
-Welcome to my blog where I will write about tech, CTF writeups, and thoughts.
+Welcome to my blog where I write about my thoughts and insights into technical topics.
 
 [Main Site](https://lienzhuzhu.github.io/ "Lien's main site")
 
