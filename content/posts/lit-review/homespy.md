@@ -28,12 +28,14 @@ I feel there are two main contributions of this work:
 1. Translating captured sequences of IR codes into meaningful natural language
 2. Demonstrating that rudimentary equipment is all that's needed
 
-I will demonstrate the second contribution using an Arduino Uno and an IR commercial-off-the-shelf (COTS) receiver module almost identical to what was used by the authors in a future article.
+I hope to demonstrate the second contribution using an Arduino Uno and an IR commercial-off-the-shelf (COTS) receiver module almost identical to what was used by the authors in a future article.
 
 The methods used to accomplish the first contribution are interesting. HomeSpy is composed of 3 components.
 
 1. IR Sniffer made using a Raspberry Pi 3 and a COTS IR receiver module
+    - This device represents a compromised IoT device that can sniff the IR signal from the remote and pass it along to a remote server for decoding and semantics extraction.
     - At the link layer, the authors implemented a novel information recovery algorithm that learns the amount of time between key presses \(around 200ms\) and even parses through the more rapid REPEAT signals many vendors implement to ensure signal transmission (for instance, holding a key will result in redundant data being sent to the receiver every 25 to 40 ms). These sequences are sent to the IR Command Decoder.
+    - The authors assume the remote only has a D-pad and an "OK" button. If the remote had alpha-numeric characters, the decoding would be trivial.
 2. IR Command Decoder receives the sequences from the hardware and decodes the keys into buttons. 
     - First the authors assembled a database mapping data sequences to buttons from online vendor data sheets.
     - Then each sequence is queried against the database.
@@ -44,4 +46,12 @@ The methods used to accomplish the first contribution are interesting. HomeSpy i
 
 The authors were able to demonstrate HomeSpy was able to capture IR signals 45 degrees from direct line of sight, decode 70,000+ codes from 1,000+ unique devices, and extract top 5 candidate login credentials with 77% accuracy.
 
-HomeSpy calls into question the disregard for home device IR security. In a following article, I hope to replicate their hardware set up.
+### Discussion
+
+The design of HomeSpy relies on being able to learn the virtual keyboard layouts, and the authors note that randomizing virtual keyboards would be a potential countermeasure. If the keys are randomly placed then the decoder would have a harder time mapping IR codes to keys, but it also makes things harder for the user who is used to QWERTY. Additionally, I believe that few-shot learning of the keyboard layout would be possible using frequency counts, even if the keyboard is randomized on each use. All it would take is for the user to enter a long sequence of characters along with sensitive information.
+
+Also, HomeSpy depends on patterns in key sequences to detect when the virtual keyboard is opened, such as the "OK" key being pressed after every few D-pad sequences. What if a new scheme were created that would take away this distinguishing characteristic. One thought I have is to take away the need to press "OK" to select a character, and instead have the system choose the character under the selection cursor after 1 second, but then HomeSpy could use the timing sequence data to figure out which key was pressed.
+
+Maybe a non-invasive filter can be made to put around the business end of TV remotes that filter out any IR waves that deviate from 0 degrees straight forward.
+
+Overall, HomeSpy calls into question the disregard for home device IR security. In a following article, I hope to replicate their hardware set up.
