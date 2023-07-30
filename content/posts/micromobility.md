@@ -33,7 +33,7 @@ Urban areas cost less for city governments to finance, promote actually knowing 
 As a kid, I always thought about what job I was going to get to buy the nice cars that would impress my friends and store outside my big house with a lawn so big I would have to use binoculaurs to see my mailbox. But now, all I can think about is how many days are left until I can sell my car and move to a real city and never be caught in pacific or mountain time again.
 
 
-YouTube channels with videos on urban planning:
+YouTube channels with videos related to urban planning:
 - Not Just Bikes (inspired by Strong Towns)
 - City Beautiful
 - CityNerd
