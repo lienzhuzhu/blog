@@ -3,7 +3,7 @@ title = "TCP Attack Lab 2 - Hijack"
 date = "2023-04-30"
 description = "Hijacking a TCP connection."
 
-tags = ["network","security","writeups",]
+tags = ["security","writeup",]
 +++
 
 

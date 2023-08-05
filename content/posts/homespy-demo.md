@@ -3,7 +3,7 @@ title = "Your TV remote is not safe, demonstration."
 date = "2023-07-30T10:07:01-07:00"
 # description = "A basic demonstration of how TV IR signal can be sniffed."
 
-tags = ["academic","communication","security",]
+tags = ["academic","security",]
 +++
 
 ### Introduction

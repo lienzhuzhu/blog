@@ -3,7 +3,7 @@ title = "TCP Attack Lab 1 - TCP Reset"
 date = "2023-04-26"
 description = "Resetting a TCP connection."
 
-tags = ["network","security","writeups",]
+tags = ["security","writeup",]
 +++
 
 

@@ -3,7 +3,7 @@ title = "TCP Attack Lab 3 - Obtaining a reverse shell"
 date = "2023-05-01"
 description = "Exploiting a TCP connection to obtain a reverse shell."
 
-tags = ["network","security","writeups",]
+tags = ["security","writeup",]
 +++
 
 
