@@ -4,6 +4,7 @@ date = "2023-07-26T18:58:18-07:00"
 # description = "How suburbia is unaliving us."
 
 tags = ["rants","life",]
+draft = true
 +++
 
 I grew up in a Midwest suburb all my life. If you asked me when I was a kid what I imagined for my future, I would have said I wanted to be rich so I could move to an even better suburb, with more green space for my nuclear family to enjoy, polished off with a huge garage that could showcase my pristine, luxury vehicles. 
