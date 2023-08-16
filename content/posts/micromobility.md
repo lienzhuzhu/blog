@@ -7,6 +7,10 @@ tags = ["rants","life",]
 draft = true
 +++
 
+Sign this [petition](https://www.hsrail.org/crossrail-chicago-petition/) for Chicago based high speed rail
+
+Millions of Americans suffer from CDS which forces them to lug around 2 ton tumors around dozens of miles every day. Car Dependency Syndrome plagues the free states.
+
 I grew up in a Midwest suburb all my life. If you asked me when I was a kid what I imagined for my future, I would have said I wanted to be rich so I could move to an even better suburb, with more green space for my nuclear family to enjoy, polished off with a huge garage that could showcase my pristine, luxury vehicles. 
 
 As seems to be the theme of my life, younger me was misguided once again.
