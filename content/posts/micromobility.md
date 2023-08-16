@@ -51,7 +51,7 @@ As a kid, I always thought about what job I was going to get to buy the nice car
 
 
 YouTube channels with videos related to urban planning:
-- Not Just Bikes (inspired by Strong Towns)
+- Not Just Bikes
 - City Beautiful
 - CityNerd
 - Adam Something
