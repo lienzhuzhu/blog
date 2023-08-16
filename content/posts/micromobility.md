@@ -51,7 +51,12 @@ In short here are the benefits of reducing car dependency:
 - Walking is free. Public transport is cheap.
 - Community. People in American suburbs don't know their neighbors.
 
-As a kid, I always thought about what job I was going to get to buy the nice cars that would impress my friends and store outside my big house with a lawn so big I would have to use binoculaurs to see my mailbox. But now, all I can think about is how many days are left until I can sell my car and move to a real city and never be caught in pacific or mountain time again.
+We need:
+- Transit oriented cities
+- Higher density neighborhoods
+- Mixed use buildings
+
+As a kid, I always thought about getting a nice job so I could buy the nice cars that would impress my friends and showcase outside my big house with a lawn so big I would have to use binoculaurs to see my mailbox. But now, all I can think about is how many days are left until I can sell my car and move to a real city and never be caught in pacific or mountain time again.
 
 
 YouTube channels with videos related to urban planning:
