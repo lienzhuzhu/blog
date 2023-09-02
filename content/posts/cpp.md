@@ -8,6 +8,45 @@ tags = ["engineering"]
 
 ### Eigen
 
+```
+git clone https://gitlab.com/libeigen/eigen.git ~/eigen
+sudo ln -s ~/eigen/Eigen /usr/local/include/Eigen
+```
+
+Then test the installation by putting this code into a file called `eigen.cpp`:
+
+```
+#include <iostream>
+#include <Eigen/Dense>
+ 
+using Eigen::MatrixXd;
+ 
+int main()
+{
+  MatrixXd m(2,2);
+  m(0,0) = 3;
+  m(1,0) = 2.5;
+  m(0,1) = -1;
+  m(1,1) = m(1,0) + m(0,1);
+  std::cout << m << std::endl;
+}
+```
+
+
+The following commands:
+
+```
+g++ eigen.cpp -o eigen-app
+./eigen-app
+```
+
+should produce:
+
+```
+  3  -1
+2.5 1.5
+```
+
 
 ### SFML
 
