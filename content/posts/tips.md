@@ -18,6 +18,7 @@ draft = true
 - Don't be jealous of others. People only show you the good things that happen in life and when you get to know them you will find they are envious of things you have (even though they might not exlicitly say this, it may come in the form of manipulation). 99% of people I've met who are materialistic or advertise their lifestyle are miserable.
 - Owning a car and driving is one of the biggest physical, mental, and financial risks you can make. Many Americans drive their life away. Try to form a life that doesn't require a car.
 - The choice is more important than the effort. Working hard on the wrong path is wasted effort.
+- You should surround yourself with people better than you. However, don't be discouraged to pursue a path just because there are people better than you also pursuing that path. It is highly likely those people are just super outliers and you are in fact in the top 5% of students or figures in that industry, and the people you admire are in the top 0.1%. Rather than feel overwhelmed by them, appreciate the fact that you are able to be friends with them.
 
 
 ### Practical (More Specific) Advice
