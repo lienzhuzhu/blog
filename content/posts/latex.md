@@ -106,8 +106,8 @@ Be really strict about escaping certain characters that are used in Markdown lik
 ```
 $$
 \begin{aligned}
-V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}_{=Q^{\*}(s, a)} \Big) \\\
-                        &   \textrm{or}                                                                 \\\
+V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}\_{=Q^{\*}(s, a)} \Big)    \\\
+                        &   \textrm{or}                                                                     \\\
 \textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
 \end{aligned}
 $$
@@ -117,8 +117,8 @@ yields:
 
 $$
 \begin{aligned}
-V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}_{=Q^{\*}(s, a)} \Big) \\\
-                        &   \textrm{or}                                                                 \\\
+V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}\_{=Q^{\*}(s, a)} \Big)    \\\
+                        &   \textrm{or}                                                                     \\\
 \textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
 \end{aligned}
 $$
