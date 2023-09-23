@@ -34,13 +34,28 @@ From the root directory, I `cd` into `themes/hugo-bearblog/layouts/partials/` an
 ```
 
 
-A block equation using `$$ <equation> $$`:
+
+### Block Equations
+
+```
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+$$
+```
+
 $$
 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 
-$An inline infinity symbol using `$ \infty $`: \infty$
 
+### Inline Equations
+
+An inline infinity symbol using `$\infty$`: $\infty$
+
+
+
+
+### Matrices
 
 ```
 $$
@@ -58,4 +73,52 @@ $$
 a & b \\\
 c & d \\\
 \end{bmatrix}
+$$
+
+
+### Aligned Equations
+
+```
+$$
+\begin{aligned}
+    a   & = b + c       \\\
+        & = d           \\\
+        & \textrm{and}  \\\
+    e   & = f \times g
+\end{aligned}
+$$
+```
+
+$$
+\begin{aligned}
+    a   & = b + c       \\\
+        & = d           \\\
+        & \textrm{and}  \\\
+    e   & = f \times g
+\end{aligned}
+$$
+
+
+### Quirks of LaTeX in Hugo using Katex
+
+Be really strict about escaping certain characters that are used in Markdown like underscores and asterisks:
+
+```
+$$
+\begin{aligned}
+V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}_{=Q^{\*}(s, a)} \Big) \\\
+                        &   \textrm{or}                                                                 \\\
+\textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
+\end{aligned}
+$$
+```
+
+yields:
+
+$$
+\begin{aligned}
+V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')}_{=Q^{\*}(s, a)} \Big) \\\
+                        &   \textrm{or}                                                                 \\\
+\textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
+\end{aligned}
 $$
