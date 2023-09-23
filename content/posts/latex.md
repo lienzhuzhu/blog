@@ -3,7 +3,7 @@ title = "LaTeX"
 date = "2023-09-23T11:30:45-07:00"
 # description = ""
 
-tags = ["academic","engineering","literature","security","writeup",]
+tags = ["engineering"]
 +++
 
 This is how I set up LaTeX rendering on this blog. It is by no means the correct way and I will likely pay for how I set up this blog and how I modified the theme without documenting my changes properly.
