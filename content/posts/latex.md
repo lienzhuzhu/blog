@@ -53,8 +53,6 @@ $$
 An inline infinity symbol using `$\infty$`: $\infty$
 
 
-
-
 ### Matrices
 
 ```
