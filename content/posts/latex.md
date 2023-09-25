@@ -8,7 +8,7 @@ tags = ["engineering"]
 
 This is how I set up LaTeX rendering on this blog. It is by no means the correct way and I will likely pay for how I set up this blog and how I modified the theme without documenting my changes properly.
 
-From the root directory, I `cd` into `themes/hugo-bearblog/layouts/partials/` and added this to `custom_head.html`:
+From the root directory, I `mkdir; cd` into `layouts/partials/` folder and added this to `custom_head.html`:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
