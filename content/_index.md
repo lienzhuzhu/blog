@@ -1,4 +1,4 @@
-Welcome to my blog where I write about my thoughts and insights into technical topics.
+Welcome to my blog where I keep my notes.
 
 [Main Site](https://lienzhuzhu.github.io/ "Lien's main site")
 
