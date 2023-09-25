@@ -1,5 +1,0 @@
-diff -r hugo-bearblog/package-lock.json .hugo-bearblog/package-lock.json
-2c2
-<   "name": "hugo-bearblog",
----
->   "name": "hugo-bear",
