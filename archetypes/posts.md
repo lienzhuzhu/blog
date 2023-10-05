@@ -1,8 +1,8 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
 date = "{{ .Date }}"
-# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
+# description = ""
 
 draft = true
-tags = [{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}"{{ printf "%s" $term }}",{{ end }}{{ end }}]
+tags = ["notes"]
 +++
