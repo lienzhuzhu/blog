@@ -97,6 +97,28 @@ $$
 $$
 
 
+#### Here's an example which describes the probability density function for the Uniform distribution:
+
+```
+$$
+f(x) =
+\left\\{
+\begin{array}{cl}
+\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
+0 & \textrm{for } x < a \textrm{ or } x > b
+\end{array}\right.
+$$
+```
+
+$$
+f(x) =
+\left\\{
+\begin{array}{cl}
+\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
+0 & \textrm{for } x < a \textrm{ or } x > b
+\end{array}\right.
+$$
+
 ### Quirks of LaTeX in Hugo using Katex
 
 Be really strict about escaping certain characters that are used in Markdown like underscores and asterisks:
@@ -119,26 +141,4 @@ V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')
                         &   \textrm{or}                                                                     \\\
 \textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
 \end{aligned}
-$$
-
-
-
-```
-$$
-f(x) =
-\left\\{
-\begin{array}{cl}
-\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
-0 & \textrm{for } x < a \textrm{ or } x > b
-\end{array}\right.
-$$
-```
-
-$$
-f(x) =
-\left\\{
-\begin{array}{cl}
-\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
-0 & \textrm{for } x < a \textrm{ or } x > b
-\end{array}\right.
 $$
