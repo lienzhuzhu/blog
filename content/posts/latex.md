@@ -120,3 +120,25 @@ V^{\*}(s)               &=  \max_a \Big( \underbrace{r(s, a) + \gamma V^{\*}(s')
 \textrm{some relation}  &=  \frac{\partial z\_{j}\^{l}}{\partial z\_{k}\^{l-1}}
 \end{aligned}
 $$
+
+
+
+```
+$$
+f(x) =
+\left\\{
+\begin{array}{cl}
+\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
+0 & \textrm{for } x < a \textrm{ or } x > b
+\end{array}\right.
+$$
+```
+
+$$
+f(x) =
+\left\\{
+\begin{array}{cl}
+\frac{1}{b-a} & \textrm{for } a \leq x \leq b \\\
+0 & \textrm{for } x < a \textrm{ or } x > b
+\end{array}\right.
+$$
