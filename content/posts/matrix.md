@@ -97,3 +97,5 @@ A(A^TA)^{-1}A^T\mathbf{b}   & = \frac{1}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T
                             & = \frac{\mathbf{u}^T\mathbf{b}}{\mathbf{u}^T\mathbf{u}}\mathbf{u} + \frac{\mathbf{v}^T\mathbf{b}}{\mathbf{v}^T\mathbf{v}}\mathbf{v} \quad\blacksquare
 \end{aligned}
 $$
+
+This result shows us why the Gram-Schmidt process works. If we already found the first two orthogonal basis vectors, we can just subtract away the individual projections to get the _error_ portion of the third vector when projected onto the subspace spanned by the first two vectors.
