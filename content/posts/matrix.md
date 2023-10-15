@@ -3,7 +3,6 @@ title = "Linear Algebra Notes"
 date = "2023-10-04T19:17:32-07:00"
 # description = "Notes on Linear Algebra"
 
-draft = true
 tags = ["notes"]
 +++
 
@@ -33,7 +32,7 @@ A^TA    & = \begin{bmatrix}
 \end{aligned}
 $$
 
-Remember, $\mathbf{u} \perp \mathbf{v}$, so $\mathbf{u}^T\mathbf{v} = \mathbf{v}^T\mathbf{u} = 0$.
+Remember, $\mathbf{u} \perp \mathbf{v}$, so $\mathbf{u}^T\mathbf{v} = \mathbf{v}^T\mathbf{u} = 0$. This is the critical fact which cleans up the inverse of that matrix product, otherwise we would be left with a mess.
 
 _Note that this is only true if the basis vectors are orthogonal. Imagine two basis vectors that span a plane which are almost colinear. Then, the sum of the projections onto each subspace spanned by the individual basis vectors (the lines) would be almost double in magnitude that of the actual projection onto the plane spanned by the two vectors._
 
@@ -47,5 +46,54 @@ $$
                     \mathbf{v}^T\mathbf{v} & 0 \\\ \\\
                     0 & \mathbf{u}^T\mathbf{u} \\\
                     \end{bmatrix} \\\
+\end{aligned}
+$$
+
+
+Zooming out we have:
+
+$$ 
+\begin{aligned}
+A(A^TA)^{-1}A^T\mathbf{b}   & = \frac{1}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}}
+                                \begin{bmatrix}
+                                | & | \\\
+                                \mathbf{u} & \mathbf{v} \\\
+                                | & |
+                                \end{bmatrix}
+                                \begin{bmatrix}
+                                \mathbf{v}^T\mathbf{v} & 0 \\\ \\\
+                                0 & \mathbf{u}^T\mathbf{u} \\\
+                                \end{bmatrix} 
+                                \begin{bmatrix}
+                                - & \mathbf{u} & - \\\
+                                - & \mathbf{v} & -
+                                \end{bmatrix} 
+                                \mathbf{b}
+\end{aligned}
+$$
+
+Let's multiply each pair of matrices:
+
+$$ 
+\begin{aligned}
+A(A^TA)^{-1}A^T\mathbf{b}   & = \frac{1}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}}
+                                \begin{bmatrix}
+                                | & | \\\
+                                \mathbf{v}^T\mathbf{v}\cdot\mathbf{u} & \mathbf{u}^T\mathbf{u}\cdot\mathbf{v} \\\
+                                | & |
+                                \end{bmatrix}
+                                \begin{bmatrix}
+                                \mathbf{u}^T\mathbf{b} \\\ \\\
+                                \mathbf{v}^T\mathbf{b}
+                                \end{bmatrix} \\\ \\\
+                            & = \frac{1}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}}
+                                \begin{bmatrix}
+                                | & | \\\
+                                \mathbf{v}^T\mathbf{v}\cdot\mathbf{u}\cdot\mathbf{u}^T\mathbf{b} & \mathbf{u}^T\mathbf{u}\cdot\mathbf{v}\cdot\mathbf{v}^T\mathbf{b} \\\
+                                | & |
+                                \end{bmatrix} \\\ \\\
+                            & = \frac{\mathbf{v}^T\mathbf{v}\cdot\mathbf{u}\cdot\mathbf{u}^T\mathbf{b} + \mathbf{u}^T\mathbf{u}\cdot\mathbf{v}\cdot\mathbf{v}^T\mathbf{b}}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}} \\\ \\\
+                            & = \frac{\mathbf{u}^T\mathbf{b}\cdot\mathbf{v}^T\mathbf{v}}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}}\mathbf{u} + \frac{\mathbf{v}^T\mathbf{b}\cdot\mathbf{u}^T\mathbf{u}}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T\mathbf{v}}\mathbf{v} \\\ \\\
+                            & = \frac{\mathbf{u}^T\mathbf{b}}{\mathbf{u}^T\mathbf{u}}\mathbf{u} + \frac{\mathbf{v}^T\mathbf{b}}{\mathbf{v}^T\mathbf{v}}\mathbf{v} \quad\blacksquare
 \end{aligned}
 $$
