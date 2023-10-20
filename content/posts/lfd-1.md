@@ -1,5 +1,5 @@
 +++
-title = "Learning From Data P-Set 1"
+title = "Learning From Data Problem Set 1"
 date = "2023-10-19T19:49:57-07:00"
 # description = ""
 
@@ -38,5 +38,38 @@ The probability of drawing a black ball on the first draw is $\frac{1}{2} \cdot 
 All together now:
 
 $$
-P(\textrm{Second ball drawn is black } | \textrm{ First ball drawn is black}) = \frac{\frac{1}{2}}{\frac{1}{2} \cdot 1 + \frac{1}{2} \cdot \frac{1}{2}}
+\begin{aligned}
+P(\textrm{Second ball drawn is black } | \textrm{ First ball drawn is black})   & = \frac{\frac{1}{2}}{\frac{1}{2} \cdot 1 + \frac{1}{2} \cdot \frac{1}{2}} \\\ \\\
+                                                                                & = \frac{2}{3}
+\end{aligned}
 $$
+
+
+**4. [b]**
+
+Use binomial distribution. Let $X \sim \text{Binom}(10, 0.55)$. Then the $P(X = 0)$ can be calculated:
+
+$$
+\begin{aligned}
+P(X = 0)    & = \binom{10}{0}(0.55)^0(0.45)^10 \\\ \\\
+            & = 3.405 \times 10^{-4}
+\end{aligned}
+$$
+
+
+**5. [c]**
+
+We again have to use binomial distribution, but craft our random variable carefully. We have to zoom out and rethink our definition of a Bernoulli trial. Let's have $Y$ be the number of samples (or experiments) of 10 marble draws that have a $\nu$ of 0, in other words, 0 red marbles out of 10 drawn.
+
+Then, we can have $Y \sim \text{Binom}(1000, 3.405 \times 10^{-4})$ since we calculated the probability of any one sample having 0 red marbles out of 10 in the last problem.
+
+$$
+\begin{aligned}
+P(Y \geq 1) & = 1 - P(Y = 0) \\\ \\\
+            & = 1 - \binom{1000}{0}(3.405 \times 10^{-4})^0(1 - 3.405 \times 10^{-4})^{1000} \\\ \\\
+            & = 0.2886
+\end{aligned}
+$$
+
+
+**6. **
