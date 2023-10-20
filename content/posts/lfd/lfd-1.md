@@ -7,7 +7,10 @@ tags = ["notes"]
 +++
 
 
-Below are my solutions to the self-paced version of the Learning From Data course at Caltech.
+
+Below are my solutions to Homework 1 of the self-paced version of the Learning From Data course at Caltech. [PDF of problems](https://work.caltech.edu/homework/hw1.pdf)
+
+[Code Repository](https://github.com/lienzhuzhu/lfd)
 
 
 **1. [d]**
@@ -72,4 +75,49 @@ P(Y \geq 1) & = 1 - P(Y = 0) \\\ \\\
 $$
 
 
-**6. **
+**6. [e]**
+
+Below is a table describing the remaining data points and the 8 possible target functions:
+
+$$
+\begin{array}{|c|c|c|c|c|c|c|c|c|}
+\hline
+x_n & f_1 & f_2 & f_3 & f_4 & f_5 & f_6 & f_7 & f_8 \\\
+\hline
+\text{1 0 1} & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1   \\\
+\text{1 1 0} & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1   \\\
+\text{1 1 1} & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1   \\\
+\hline
+\end{array}
+$$
+
+
+Now let's analyze each option for $g$:
+
+[a]. $g(x_n) = 
+\begin{bmatrix}
+1 \\\
+1 \\\
+1
+\end{bmatrix}
+$
+
+This $g$ matches $f_8$ for 3 points, $f_4$, $f_6$, $f_7$ for 2 points, and $f_2$, $f_3$, $f_5$ for 1 point. This is a total of **12** points.
+
+
+[b]. $g(x_n) = 
+\begin{bmatrix}
+0 \\\
+0 \\\
+0
+\end{bmatrix}
+$
+
+This $g$ matches $f_1$ for 3 points, $f_2$, $f_3$, $f_5$ for 2 points, and $f_4$, $f_6$, $f_7$ for 1 point. This is a total of **12** points.
+
+[a] and [b] have the same score. So, we conclude that [e] must be the correct answer.
+
+
+**7.**
+
+See the code repository for work, the link is at the top of this post.
