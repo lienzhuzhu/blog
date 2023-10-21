@@ -118,6 +118,12 @@ This $g$ matches $f_1$ for 3 points, $f_2$, $f_3$, $f_5$ for 2 points, and $f_4$
 [a] and [b] have the same score. So, we conclude that [e] must be the correct answer.
 
 
-**7.**
+For 7 - 10, see the code repository for work, the link is at the top of this post. Run `python3 pla.py -N <sample size>` after installing packages via `pip install -r requirements.txt`.
 
-See the code repository for work, the link is at the top of this post.
+**7. [b]**
+
+**8. [c]**
+
+**9. [b]**
+
+**10. [b]**
