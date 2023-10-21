@@ -24,11 +24,6 @@ I get something in the range $[0.03, 0.04]$ for the average value of $\nu_{min}$
 The graphs show us that the $c_{min}$ coin is not bounded by the Hoeffding bound as we would expect. This makes sense because the Hoeffding inequality only applies to situations where we decide on a strategy before working on the data. In the learning problem, we pick $g$ based on the performance of many $h$'s on the dataset.
 
 
-Here's a short elaboration on the Hoeffding bound:
-
-TODO
-
-
 **3. [e]**
 
 The key point of the concept of noise is that sometimes $y \neq f(\vec{x})$, or in other words, $y$ does not correspond the $f(\vec{x})$ completely. 
