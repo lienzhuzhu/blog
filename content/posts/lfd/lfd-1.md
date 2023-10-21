@@ -7,8 +7,7 @@ tags = ["notes"]
 +++
 
 
-
-Below are my solutions to Homework 1 of the self-paced version of the Learning From Data course at Caltech. [PDF of problems](https://work.caltech.edu/homework/hw1.pdf)
+Below are my solutions to Homework 1 of the self-paced version of the CS 156 course at Caltech. [PDF of problems](https://work.caltech.edu/homework/hw1.pdf)
 
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 
@@ -119,6 +118,8 @@ This $g$ matches $f_1$ for 3 points, $f_2$, $f_3$, $f_5$ for 2 points, and $f_4$
 
 
 For 7 - 10, see the code repository for work, the link is at the top of this post. Run `python3 pla.py -N <sample size>` after installing packages via `pip install -r requirements.txt`.
+
+The graphs drawn are for the final experimental trial.
 
 **7. [b]**
 
