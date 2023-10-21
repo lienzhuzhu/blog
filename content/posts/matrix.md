@@ -9,6 +9,8 @@ tags = ["notes"]
 
 **Orthogonality, Projection, Gram-Schmidt, and $QR$ Factorization**
 
+---
+
 Show that if $\mathbf{u} \perp \mathbf{v}$ and $\mathbf{C}(A)=\\{\mathbf{u}, \mathbf{v}\\}$ then
 
 $$
@@ -99,3 +101,5 @@ A(A^TA)^{-1}A^T\mathbf{b}   & = \frac{1}{\mathbf{u}^T\mathbf{u}\cdot\mathbf{v}^T
 $$
 
 This result shows us why the Gram-Schmidt process works. If we already found the first two orthogonal basis vectors, we can just subtract away the individual projections to get the _error_ portion of the third vector when projected onto the subspace spanned by the first two vectors.
+
+---

@@ -16,7 +16,7 @@ Refer to the code repository above for problems 1 and 2. Usage: `python3 coin.py
 
 **1. [b]**
 
-I get around 0.03 - 0.04 for the average value of $\nu_{min}$ so the correct answer is pretty close to being 0.1 but alas it is still correct to say 0.01.
+I get something in the range $[0.03, 0.04]$ for the average value of $\nu_{min}$ so the correct answer is pretty close to being 0.1 but alas it is still correct to say 0.01.
 
 
 **2. [d]**
@@ -26,4 +26,25 @@ The graphs show us that the $c_{min}$ coin is not bounded by the Hoeffding bound
 
 Here's a short elaboration on the Hoeffding bound:
 
+TODO
 
+
+**3. [e]**
+
+The key point of the concept of noise is that sometimes $y \neq f(\vec{x})$, or in other words, $y$ does not correspond the $f(\vec{x})$ completely. 
+
+We want to find $P(h(\vec{x}) \neq y)$. We know that $y = f(\vec{x})$ with probability $\lambda$ and does not match $f(\vec{x})$ with a probability of $1-\lambda$. We want to add together the probabilities of the instances where $h(\vec{x}) \neq y$, which is when $h(\vec{x}) = f(\vec{x})$ but $y \neq f(\vec{x})$, and $h(\vec{x}) \neq f(\vec{x})$ but $y = f(\vec{x})$.
+
+Now that we've broken the question down, it becomes easier to put some math to it:
+
+$$
+\begin{aligned}
+P(h(\vec{x}) \neq y)    & = P(y = f(\vec{x}) \cap h(\vec{x}) \neq f(\vec{x})) + P(y \neq f(\vec{x}) \cap h(\vec{x}) = f(\vec{x})) \\\
+                        & = \lambda \mu + (1-\lambda)(1-\mu)
+\end{aligned}
+$$
+
+
+**4. [b]**
+
+When $\lambda = 0.5$, the correspondence between $y$ and $f(\vec{x})$ is basically random.
