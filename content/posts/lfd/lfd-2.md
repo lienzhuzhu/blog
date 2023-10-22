@@ -58,7 +58,7 @@ For 5-7, use the code linked at the top of this post.
 
 **7. [a]**
 
-`python3 linregression.py -N 10` yields somewhere around $[3, 5]$ for me.
+`python3 linregression.py -N 10` yields somewhere around $[3, 7]$ for me.
 
 
 For 8-10, use the code linked at the top of this post.
