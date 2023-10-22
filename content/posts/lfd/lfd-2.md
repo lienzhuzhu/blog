@@ -43,3 +43,22 @@ $$
 **4. [b]**
 
 When $\lambda = 0.5$, the correspondence between $y$ and $f(\vec{x})$ is basically random.
+
+
+
+For 5-7, use the code linked at the top of this post.
+
+**5. [c]**
+
+`python3 linregression.py -N 100` yields somewhere around $[0.03, 0.04]$ for me.
+
+**6. [c]**
+
+`python3 linregression.py -N 100` yields somewhere around $[0.04, 0.05)$ for me.
+
+**7. [a]**
+
+`python3 linregression.py -N 10` yields somewhere around $[3, 5]$ for me.
+
+
+For 8-10, use the code linked at the top of this post.
