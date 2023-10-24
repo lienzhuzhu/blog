@@ -61,4 +61,4 @@ For 4 points in $\mathbb{R}^3$, we can separate any pair of points from the othe
 
 For 5 points in $\mathbb{R}^3$, we arrange the points into a pentahedron, with the base slightly distorted. Observe that no matter what plane you imagine, 2 points that are diagonal from each other in the base can never be alone together. You can try to distort the base to get your intended points alone together, but that would just make it so the other pair of points that make up the base cannot be alone together!
 
-
+Additionally, Exercise 2.4 concludes that the $d_{VC}$ for a $d-$dimensional perceptron is $d_{VC} = d + 1$.
