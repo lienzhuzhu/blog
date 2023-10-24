@@ -62,3 +62,12 @@ For 5-7, use the code linked at the top of this post.
 
 
 For 8-10, use the code linked at the top of this post.
+
+**8. [d]**
+`python3 transform.py -N 1000` has E_in really close to $0.5$.
+
+**9. [a]**
+`python3 transform.py -N 1000` has the $1.5$ coefficients on the last two terms which affect the result the most, so I selected [a].
+
+**10. [b]**
+I get around $0.12$
