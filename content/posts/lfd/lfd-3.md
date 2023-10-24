@@ -51,3 +51,14 @@ N   & =         \frac{1}{2\epsilon^2}\ln{\frac{200}{\delta}} \\\ \\\
     & \approx   1761 
 \end{aligned}
 $$
+
+
+**4. [b]**
+
+The way to ensure the arrangement of points doesn't limit the number of potential dichotomies is to arrange them such that no more than 3 points are colinear and no more than 4 are co-planar. I like to check pairs of points and see if I can separate them from the other $N-2$ points.
+
+For 4 points in $\mathbb{R}^3$, we can separate any pair of points from the others if we imagine a tetrahedron. 
+
+For 5 points in $\mathbb{R}^3$, we arrange the points into a pentahedron, with the base slightly distorted. Observe that no matter what plane you imagine, 2 points that are diagonal from each other in the base can never be alone together. You can try to distort the base to get your intended points alone together, but that would just make it so the other pair of points that make up the base cannot be alone together!
+
+
