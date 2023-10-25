@@ -7,7 +7,7 @@ tags = ["notes"]
 +++
 
 
-Below are my solutions to self-paced version of the Caltech CS 156 Learning From Data course.
+Below are my solutions to self-paced version of the Caltech CS 156 Learning From Data course. [PDF of problems](https://work.caltech.edu/homework/hw3.pdf)
 
 
 **1. [b]**
@@ -62,3 +62,26 @@ For 4 points in $\mathbb{R}^3$, we can separate any pair of points from the othe
 For 5 points in $\mathbb{R}^3$, we arrange the points into a pentahedron, with the base slightly distorted. Observe that no matter what plane you imagine, 2 points that are diagonal from each other in the base can never be alone together. You can try to distort the base to get your intended points alone together, but that would just make it so the other pair of points that make up the base cannot be alone together!
 
 Additionally, Exercise 2.4 concludes that the $d_{VC}$ for a $d-$dimensional perceptron is $d_{VC} = d + 1$.
+
+
+**5. [b]**
+
+The growth function $m_\mathcal{H}$ must be polynomial or equal to $2^N$.
+
+
+**6. [c]**
+
+With 2 positive intervals, we can generate all $2^4$ dichotomies on 4 points in $\mathbb{R}^1$, the number line, because we can leave any two points alone by themselves, though in this case that means we label them as positive points.
+
+For 5 points, we can label the $1^{st}$, $3^{rd}$, and $5^{th}$ points as positive points. With just 2 positive intervals, there is no way we can achieve this labeling.
+
+
+**7. [c]**
+
+Let's apply the same logic as we use for finding the growth function for the single positive interval. If we pick 4 distinct segments to place our start and end points, then we have $\binom{N+1}{4}$ combinations. 
+
+Now what about the non-disticnt cases? Well, there's really only one because as long the left-most interval's end point is the same or overlaps with the right-most interval's start point, then it reduces to the single interval case where we have $\binom{N+1}{2}$ choices.
+
+Of course, we still have the single outcome where all start points are in the same segment as their endpoints and so we add a 1. Putting these results together gets us:
+
+$m_{\mathcal{H}} = \binom{N+1}{4} + \binom{N+1}{2} + 1$

@@ -1,6 +1,6 @@
 +++
-title = "CS 156 Learning From Data Notes"
-date = "2023-10-21T11:01:49-07:00"
+title = "Learning From Data Book Notes"
+date = "2023-10-18T19:49:57-07:00"
 # description = ""
 
 tags = ["notes"]
@@ -98,16 +98,58 @@ $$
 But we can express $\epsilon$ in terms of $\delta$
 
 $$
-\begin{array}{ccc}
-2Me^{-2\epsilon^2N}         & = &   \delta \\\ \\\
-e^{-2\epsilon^2N}           & = &   \frac{\delta}{2M} \\\ \\\
-\ln{e^{-2\epsilon^2N}}      & = &   \ln{\frac{\delta}{2M}} \\\ \\\
--2\epsilon^2N               & = &   \ln{\frac{\delta}{2M}} \\\ \\\
-\epsilon^2                  & = &   \frac{1}{2N}\ln{\frac{2M}{\delta}} \\\ \\\
-\epsilon                    & = &   \sqrt{\frac{1}{2N}\ln{\frac{2M}{\delta}}} \\\ \\\
-\end{array}
+\begin{aligned}
+2Me^{-2\epsilon^2N}         & =    \delta \\\ \\\
+e^{-2\epsilon^2N}           & =    \frac{\delta}{2M} \\\ \\\
+\ln{e^{-2\epsilon^2N}}      & =    \ln{\frac{\delta}{2M}} \\\ \\\
+-2\epsilon^2N               & =    \ln{\frac{\delta}{2M}} \\\ \\\
+\epsilon^2                  & =    \frac{1}{2N}\ln{\frac{2M}{\delta}} \\\ \\\
+\epsilon                    & =    \sqrt{\frac{1}{2N}\ln{\frac{2M}{\delta}}} \\\ \\\
+\end{aligned}
 $$
 
 $$
 \therefore E_{out}(g) \leq E_{in}(g) + \sqrt{\frac{1}{2N}\ln{\frac{2M}{\delta}}}
 $$
+
+
+In fact, we can look at the 3 other inequalities of the Hoeffding bound
+$$
+P(|E_{in} - E_{out}| > \epsilon) \leq \delta
+$$.
+
+
+The Hoeffding bound directly implies with probability at ***most*** $\delta$:
+$$
+\begin{aligned}
+|E_{in} - E_{out}| > \epsilon   & \equiv    E_{in} - E_{out} > \epsilon \implies E_{out} < E_{in} - \epsilon \quad(1) \\\ \\\
+                                & \equiv    E_{out} - E_{in} > \epsilon \implies E_{out} > E_{in} + \epsilon \quad(2) \\\ \\\
+\end{aligned}
+$$
+
+
+We already looked at one side of the complement of the Hoeffding bound
+$$
+P[(|E_{in} - E_{out}| > \epsilon)^C] = P(|E_{in} - E_{out}| \leq \epsilon) \geq \delta
+$$
+
+which implies that with probability at ***least*** $1-\delta$:
+$$
+\begin{aligned}
+|E_{in} - E_{out}| \leq \epsilon    & \equiv    E_{in} - E_{out} \leq \epsilon \implies E_{out} \geq E_{in} - \epsilon \quad(3) \\\ \\\
+                                    & \equiv    E_{out} - E_{in} \leq \epsilon \implies E_{out} \leq E_{in} + \epsilon \quad(4) \\\ \\\
+\end{aligned}
+$$
+
+
+Result $(4)$ is the bound we saw before. Let's go over what these 4 bounds mean.
+
+Results $(1)$ and $(3)$ are what we can think of as our "best case" upper and lower bounds on $E_{out}$, respectively, because they relate $E_{out}$ to the smaller value of $E_{in} - \epsilon$. 
+
+To elaborate, result $(1)$ translates to "we have a ceiling on the probability that $E_{out}$ will be smaller than $E_{in} - \epsilon$, but it is a short ceiling, which means it is far more likely that $E_{out}$ will be closer to being less than or equal to $E_{in} + \epsilon$, $1-\delta$ probable to be more exact.
+
+Flip the logic and we see why $(2)$ and $(4)$ are the "worst case" bounds.
+
+Let's look at result $(3)$ more closely. This result tells us that out of all hypotheses $\mathcal{h} \in \mathcal{H}$, the $g$ selected is likely the best we could do, since there is a fairly high floor, $1-\delta$, on the probability that $E_{in} - \epsilon$ is the lower bound for $E_{out}$. 
+
+Since $g$ was selected as $\underset{h \in \mathcal{H}}{\argmin}(E_{in}(\mathcal{h}))$, every other $h$ will have higher in-sample error, and we have high confidence that out-of-sample error for those hypotheses will also be larger from this bound. $\blacksquare$
