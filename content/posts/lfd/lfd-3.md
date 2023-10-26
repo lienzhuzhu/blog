@@ -85,3 +85,26 @@ Now what about the non-disticnt cases? Well, there's really only one because as 
 Of course, we still have the single outcome where all start points are in the same segment as their endpoints and so we add a 1. Putting these results together gets us:
 
 $m_{\mathcal{H}} = \binom{N+1}{4} + \binom{N+1}{2} + 1$
+
+
+**8. [d]**
+
+For this question, I just considered the $1$-interval and $2$-interval. The break point for the $1$-interval is 3 points, because you can never have the middle point be the only positively labeled point. We showed in the problem 5 that the $2$-interval has a break point of 5.
+
+This means the only possible expression for the break point of the $M$-interval is $2M+1$.
+
+
+**9. [d]**
+
+In fact, the break point of the triangle convex set is 8, but amongst the choices, 9 is the smallest. The visual logic can be shown as followed by drawing 8 points. 3 positive points is trivial, so we go to 4 positives. Also note that the most "strenuous" task is trying to separate 4 positive points amongst the other points when the positive points are spread as far apart as possible.
+
+With 8 total points, we can spread the 4 positives around with one negative in between each pair of positives. Attempting to draw a triangle to contain these points will only result in defeat.
+
+Now, draw 7 points and confirm that no matter what 4 points you label as positive, you can always draw a triangle that would contain these points because two of the positive points will always be next together and contained within a tip of the triangle and the two points that are spread out can be the base of the triangle.
+
+$\therefore$ 9 is the smallest answer out of the choices given.
+
+
+**10. [b]**
+
+Convince yourself that the concentric circles case is the same as a $1$-interval in a $360\degree$ mirror.
