@@ -208,6 +208,8 @@ Note that $d_{vc} = q$ because of the generous use of $N$. Let $N^\prime = N+1$,
 
 **9. [b]**
 
+Think of VC dimension as a sort of measure for a hypothesis set's classification "power" or "ability".
+
 Options [d] and [e] are automatically thrown out because it is very possible that the hypotheses have no common overlap because it just takes one hypothesis to have zero overlap with the others to make the entire intersection the empty set. Therefore, it would be incorrect to place the lower bound at the minimum $d_{vc}$.
 
 The upper bound of option [a] is correct but not tighter than the upper bound from [c]. Imagine $K=2$ and we have hypothesis sets $\mathcal{H}\_1$ and $\mathcal{H}\_2$, and let $d_{vc}(\mathcal{H}\_1) = 5$ while $d_{vc}(\mathcal{H}\_2) = 9$. The intersection of these sets is all hypotheses that are in both $\mathcal{H}\_1$ and $\mathcal{H}\_2$ and because their VC dimensions differ, we know they cannot be completely overlapping, or the same sets, because otherwise they would break at the same $N$. Let all the hypotheses of $\mathcal{H}\_1$ be present in $\mathcal{H}\_2$, _i.e._ $\mathcal{H}\_1 \subset \mathcal{H}\_2$ then
@@ -216,7 +218,7 @@ $$
 d_{vc}(\mathcal{H}\_1 \cap \mathcal{H}\_2) = d_{vc}(\mathcal{H}\_1)
 $$
 
-In fact, this is equal to the worst case upper bound, because chances are there are hypotheses in $\mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
+In fact, this is equal to the worst case upper bound, because chances are $\exists\enspace h \in \mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
 
 
 **10. [e]**
