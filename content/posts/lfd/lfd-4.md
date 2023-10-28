@@ -15,7 +15,7 @@ Below are my solutions to the self-paced version of Caltech's CS 156 Machine Lea
 I made a small script to do the iterative calculation:
 
 ```
-❯ python3 hw4/vc.py
+❯ python3 hw4/sample-complexity.py
 452955.4551979035
 ```
 
