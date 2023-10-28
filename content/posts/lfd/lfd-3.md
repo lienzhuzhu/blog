@@ -10,7 +10,7 @@ tags = ["notes", "ml"]
 [PDF of problems](https://work.caltech.edu/homework/hw3.pdf)
 
 
-**1. [b]**
+<h3>1. [b]</h3>
 
 We can express our confidence as $\delta = 2Me^{-2\epsilon^2N}$ and manipulate this expression to put it in terms of $N$:
 
@@ -36,6 +36,9 @@ N   & =         \frac{1}{2\epsilon^2}\ln{\frac{2}{\delta}} \\\ \\\
 \end{aligned}
 $$
 
+
+<h3>2. [c]</h3>
+
 For $M = 10$:
 $$
 \begin{aligned}
@@ -43,6 +46,9 @@ N   & =         \frac{1}{2\epsilon^2}\ln{\frac{20}{\delta}} \\\ \\\
     & \approx   1300 
 \end{aligned}
 $$
+
+
+<h3>3. [d]</h3>
 
 For $M = 100$:
 $$
@@ -53,7 +59,7 @@ N   & =         \frac{1}{2\epsilon^2}\ln{\frac{200}{\delta}} \\\ \\\
 $$
 
 
-**4. [b]**
+<h3>4. [b]</h3>
 
 The way to ensure the arrangement of points doesn't limit the number of potential dichotomies is to arrange them such that no more than 3 points are colinear and no more than 4 are co-planar. I like to check pairs of points and see if I can separate them from the other $N-2$ points.
 
@@ -64,19 +70,19 @@ For 5 points in $\mathbb{R}^3$, we arrange the points into a pentahedron, with t
 Additionally, Exercise 2.4 concludes that the $d_{VC}$ for a $d-$dimensional perceptron is $d_{VC} = d + 1$.
 
 
-**5. [b]**
+<h3>5. [b]</h3>
 
 The growth function $m_\mathcal{H}$ must be polynomial or equal to $2^N$.
 
 
-**6. [c]**
+<h3>6. [c]</h3>
 
 With 2 positive intervals, we can generate all $2^4$ dichotomies on 4 points in $\mathbb{R}^1$, the number line, because we can leave any two points alone by themselves, though in this case that means we label them as positive points.
 
 For 5 points, we can label the $1^{st}$, $3^{rd}$, and $5^{th}$ points as positive points. With just 2 positive intervals, there is no way we can achieve this labeling.
 
 
-**7. [c]**
+<h3>7. [c]</h3>
 
 Let's apply the same logic as we use for finding the growth function for the single positive interval. If we pick 4 distinct segments to place our start and end points, then we have $\binom{N+1}{4}$ combinations. 
 
@@ -87,14 +93,14 @@ Of course, we still have the single outcome where all start points are in the sa
 $m_{\mathcal{H}} = \binom{N+1}{4} + \binom{N+1}{2} + 1$
 
 
-**8. [d]**
+<h3>8. [d]</h3>
 
 For this question, I just considered the $1$-interval and $2$-interval. The break point for the $1$-interval is 3 points, because you can never have the middle point be the only positively labeled point. We showed in the problem 5 that the $2$-interval has a break point of 5.
 
 This means the only possible expression for the break point of the $M$-interval is $2M+1$.
 
 
-**9. [d]**
+<h3>9. [d]</h3>
 
 In fact, the break point of the triangle convex set is 8, but amongst the choices, 9 is the smallest. The visual logic can be shown as followed by drawing 8 points. 3 positive points is trivial, so we go to 4 positives. Also note that the most "strenuous" task is trying to separate 4 positive points amongst the other points when the positive points are spread as far apart as possible.
 
@@ -105,6 +111,6 @@ Now, draw 7 points and confirm that no matter what 4 points you label as positiv
 $\therefore$ 9 is the smallest answer out of the choices given.
 
 
-**10. [b]**
+<h3>10. [b]</h3>
 
-Convince yourself that the concentric circles case is the same as a $1$-interval revolved around $360\degrees$.
+Convince yourself that the concentric circles case is just the $1$-interval revolved around $360\degree$.
