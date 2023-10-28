@@ -3,7 +3,7 @@ title = "Learning From Data Problem Set 2"
 date = "2023-10-20T18:25:47-07:00"
 # description = ""
 
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 
@@ -12,7 +12,7 @@ Below are my solutions to the second problem set from the self-paced version of 
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 
 
-Refer to the code repository above for problems 1 and 2. Usage: `python3 coin.py`.
+Refer to the code repository above for problems 1 and 2. Usage: `python3 hw2/coin.py`.
 
 **1. [b]**
 
@@ -50,24 +50,24 @@ For 5-7, use the code linked at the top of this post.
 
 **5. [c]**
 
-`python3 linregression.py -N 100` yields somewhere around $[0.03, 0.04]$ for me.
+`python3 hw2/2linregression.py -N 100` yields somewhere around $[0.03, 0.04]$ for me.
 
 **6. [c]**
 
-`python3 linregression.py -N 100` yields somewhere around $[0.04, 0.05)$ for me.
+`python3 hw2/linregression.py -N 100` yields somewhere around $[0.04, 0.05)$ for me.
 
 **7. [a]**
 
-`python3 linregression.py -N 10` yields somewhere around $[3, 7]$ for me.
+`python3 hw2/linregression.py -N 10` yields somewhere around $[3, 7]$ for me.
 
 
 For 8-10, use the code linked at the top of this post.
 
 **8. [d]**
-`python3 transform.py -N 1000` has E_in really close to $0.5$.
+`python3 hw2/transform.py -N 1000` has E_in really close to $0.5$.
 
 **9. [a]**
-`python3 transform.py -N 1000` has the $1.5$ coefficients on the last two terms which affect the result the most, so I selected [a].
+`python3 hw2/transform.py -N 1000` has the $1.5$ coefficients on the last two terms which affect the result the most, so I selected [a].
 
 **10. [b]**
 I get around $0.12$

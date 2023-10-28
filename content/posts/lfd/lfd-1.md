@@ -3,7 +3,7 @@ title = "Learning From Data Problem Set 1"
 date = "2023-10-19T19:49:57-07:00"
 # description = ""
 
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 
@@ -117,7 +117,7 @@ This $g$ matches $f_1$ for 3 points, $f_2$, $f_3$, $f_5$ for 2 points, and $f_4$
 [a] and [b] have the same score. So, we conclude that [e] must be the correct answer.
 
 
-For 7 - 10, see the code repository for work, the link is at the top of this post. Run `python3 pla.py -N <sample size>` after installing packages via `pip install -r requirements.txt`.
+For 7 - 10, see the code repository for work, the link is at the top of this post. Run `python3 hw1/pla.py -N <sample size>` after installing packages via `pip install -r requirements.txt`.
 
 The graphs drawn are for the final experimental trial.
 
