@@ -216,10 +216,12 @@ $$
 d_{vc}(\mathcal{H}\_1 \cap \mathcal{H}\_2) = d_{vc}(\mathcal{H}\_1)
 $$
 
-In fact, this is the worst case upper bound, because chances are there are hypotheses in $\mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
+In fact, this is equal to the worst case upper bound, because chances are there are hypotheses in $\mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
 
 
 **10. [e]**
+
+The lower bound must be at least the maximum VC dimension of the hypothesis sets.
 
 We might think that the $d_{vc}(\bigcap^K\mathcal{H}\_k) = \sum^Kd_{vc}(\mathcal{H}\_k)$, but it is easy to imagine two hypothesis sets combining and increasing their collective classification power.
 
