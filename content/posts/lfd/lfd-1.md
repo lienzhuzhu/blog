@@ -123,8 +123,35 @@ The graphs drawn are for the final experimental trial.
 
 <h3>7. [b]</h3>
 
+```
+❯ python3 hw1/pla.py -N 10
+Iterations: 9.75
+Disagreement: 0.106781
+```
+
+
 <h3>8. [c]</h3>
+
+```
+❯ python3 hw1/pla.py -N 10
+Iterations: 9.75
+Disagreement: 0.106781
+```
+
 
 <h3>9. [b]</h3>
 
+```
+❯ python3 hw1/pla.py -N 100
+Iterations: 110.169
+Disagreement: 0.013299000000000004
+```
+
+
 <h3>10. [b]</h3>
+
+```
+❯ python3 hw1/pla.py -N 100
+Iterations: 110.169
+Disagreement: 0.013299000000000004
+```
