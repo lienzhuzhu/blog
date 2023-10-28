@@ -7,7 +7,7 @@ tags = ["notes", "ml"]
 +++
 
 
-Below are my solutions to self-paced version of the Caltech CS 156 Learning From Data course. [PDF of problems](https://work.caltech.edu/homework/hw3.pdf)
+[PDF of problems](https://work.caltech.edu/homework/hw3.pdf)
 
 
 **1. [b]**

@@ -6,7 +6,7 @@ date = "2023-10-26T21:18:07-07:00"
 tags = ["notes", "ml"]
 +++
 
-Below are my solutions to the self-paced version of Caltech's CS 156 Machine Learning course. [PDF of problems](https://work.caltech.edu/homework/hw4.pdf)
+[PDF of problems](https://work.caltech.edu/homework/hw4.pdf)
 
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 

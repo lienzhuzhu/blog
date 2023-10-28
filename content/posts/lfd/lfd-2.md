@@ -7,7 +7,7 @@ tags = ["notes", "ml"]
 +++
 
 
-Below are my solutions to the second problem set from the self-paced version of the CS 156 course at Caltech. [PDF of problems](https://https://work.caltech.edu/homework/hw2.pdf)
+[PDF of problems](https://https://work.caltech.edu/homework/hw2.pdf)
 
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 
