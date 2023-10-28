@@ -16,6 +16,11 @@ Refer to the code repository above for problems 1 and 2. Usage: `python3 hw2/coi
 
 <h3>1. [b]</h3>
 
+```
+❯ python3 hw2/coin.py
+Average value of ν_min: 0.037552
+```
+
 I get something in the range $[0.03, 0.04]$ for the average value of $\nu_{min}$ so the correct answer is pretty close to being 0.1 but alas it is still correct to say 0.01.
 
 
@@ -50,15 +55,32 @@ For 5-7, use the code linked at the top of this post.
 
 <h3>5. [c]</h3>
 
-`python3 hw2/linregression.py -N 100` yields somewhere around $[0.03, 0.04]$ for me.
+```
+❯ python3 hw2/linregression.py -N 100
+Iterations: 92.548
+E_in actual: 0.0368600000
+E_out estimate: 0.046408
+```
+
 
 <h3>6. [c]</h3>
 
-`python3 hw2/linregression.py -N 100` yields somewhere around $[0.04, 0.05)$ for me.
+```
+❯ python3 hw2/linregression.py -N 100
+Iterations: 92.548
+E_in actual: 0.0368600000
+E_out estimate: 0.046408
+```
+
 
 <h3>7. [a]</h3>
 
-`python3 hw2/linregression.py -N 10` yields somewhere around $[3, 7]$ for me.
+```
+❯ python3 hw2/linregression.py -N 10
+Iterations: 3.533
+E_in actual: 0.0248000000
+E_out estimate: 0.113239
+```
 
 
 For 8-10, use the code linked at the top of this post.
