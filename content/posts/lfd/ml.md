@@ -130,7 +130,7 @@ $$
 In fact, we can look at the 3 other inequalities of the Hoeffding bound
 $$
 P(|E_{in} - E_{out}| > \epsilon) \leq \delta
-$$.
+$$
 
 
 The Hoeffding bound directly implies with probability at ***most*** $\delta$:
@@ -167,6 +167,105 @@ Flip the logic and we see why $(2)$ and $(4)$ are the "worst case" bounds.
 Let's look at result $(3)$ more closely. This result tells us that out of all hypotheses $\mathcal{h} \in \mathcal{H}$, the $g$ selected is likely the best we could do, since there is a fairly high floor, $1-\delta$, on the probability that $E_{in} - \epsilon$ is the lower bound for $E_{out}$. 
 
 Since $g$ was selected as $\underset{h \in \mathcal{H}}{\argmin}(E_{in}(\mathcal{h}))$, every other $h$ will have higher in-sample error, and we have high confidence that out-of-sample error for those hypotheses will also be larger from this bound. $\blacksquare$
+
+
+
+<h3>VC Dimension For Perceptron Can Be Expressed Analytically</h3>
+
+This is Exercise 2.4 in the book.
+
+The VC Dimension $d_{vc}$ is a measure of the complexity of a hypothesis set. The $d_{vc}$ for any $d$-dimensional perceptron can in fact be derived analytically. From our observations of $\mathbb{R}^2$ and $\mathbb{R}^3$ datasets, we have a hunch that $d_{vc} = d+1$ for any perceptron of dimension $d$.
+
+To confirm this, we must show that $d_{vc} \geq d+1$ and $d_{vc} \leq d+1$, which is only possible if $d_{vc} = d+1$.
+
+**Proof: $d_{vc} \geq d+1$**
+
+We must show that $d+1$ points can be shattered. Let's put $d+1$ points as the rows of a dataset matrix $\mathbf{X}$.
+
+$$
+\mathbf{X} = 
+\begin{bmatrix}
+ & -- & \vec{x}\_1 & -- & \\\
+ & -- & \vec{x}\_2 & -- & \\\
+ & & \vdots & & \\\
+ & -- & \vec{x}\_{d+1} & -- & \\\
+\end{bmatrix}
+$$
+
+Because each $\vec{x}$ has $d+1$ features, $\mathbf{X}$ is square. We can choose any dataset to maintain generality so let $\mathbf{X}$ contain only linearly independent points aka row vectors. This means $\mathbf{X}$ is invertible as it is a square matrix with independent columns (and rows).
+
+Okay, we've established what $\mathbf{X}$, but what question am I trying to answer? The critical question is can we find some hypothesis $\vec{w}$ that will produce any of the possible $2^{d+1}$ $d+1$-dimensional $\vec{y}$ output vectors.
+
+Well, $\mathbf{X}$ reduces to the identity matrix, which means any $\vec{y}$ can be obtained as a linear combination of the columns of $\mathbf{X}$. $\vec{y}$ must be in the column space and must be achievable by any co-efficient vector $\vec{w}$.
+
+$$
+\vec{w} = \mathbf{X}^{-1}\vec{y}
+$$
+
+We conclude that any one of the $2^{d+1}$ $\vec{y}$'s imaginable can be achieved on $d+1$ points and succesfully show that $d_{vc} \geq d+1$.
+
+
+**Proof: $d_{vc} \leq d+1$**
+
+Proving that $d_{vc}$ is at most $d+1$ requires showing that there no set of $d+2$ points can be shattered, _i.e._ we cannot achieve $2^{d+2}$ dichotomies or $\vec{y}$'s on $d+2$ points.
+
+This time $\mathbf{X}$ will have an extra row.
+
+$$
+\mathbf{X} = 
+\begin{bmatrix}
+ & -- & \vec{x}\_1 & -- & \\\
+ & -- & \vec{x}\_2 & -- & \\\
+ & & \vdots & & \\\
+ & -- & \vec{x}\_{d+1} & -- & \\\
+ & -- & \vec{x}\_{d+2} & -- & \\\
+\end{bmatrix}
+$$
+
+This is clearly a tall matrix, which means it does not have full row rank, and one of the points $\vec{x}\_j$ is some linear combination of the other rows, _i.e._
+
+$$
+\vec{x}\_j = \sum_{i \neq j}a_i\vec{x}\_i
+$$
+
+We need to show that there is no set of $d+2$ points in $\mathbb{R}^{d+1}$ that can be shattered by the $d+1$-perceptron, _i.e._ there exists some $\vec{y}$ that cannot be produced.
+
+Suppose we want to obtain the dichotomy might have $y_i = \vec{w}^T\vec{x}_i = \textrm{sign}(a_i)$ when $a_i \neq 0$, and classifies $\vec{x}_j$ as a negative point such that $y_j = \vec{w}^T\vec{x}_j = -1$. This is certainly a dichotomy we would expect to be achievable if $d+2$ points can be shattered aka $d+2$ is not a break point.
+
+We will use proof by contradiction to show that no such $\vec{w}$ that shatters $d+2$ points can exist. For now, assume $\vec{w}$ is able to produce $2^{d+2}$ dichotomies.
+
+$$
+\begin{aligned}
+y_j     & = \vec{w}^T\vec{x}_j \\\ \\\
+        & = \vec{w}^T\sum\_{i\neq j}a\_i\vec{x}\_i \\\ \\\
+        & = \sum\_{i\neq j}a\_i\vec{w}^T\vec{x}\_i \\\ \\\
+        & = \sum\_{i\neq j}a\_iy\_i = -1\textrm{?}
+\end{aligned}
+$$
+
+Except that last equality cannot be true! We said this desired dichotomy has $y_i = \textrm{sign}(a_i)$ when $a_i \neq 0$.
+
+$$
+\therefore \sum\_{i\neq j}a_iy_i = \sum\_{i\neq j}a_i\cdot\textrm{sign}(a_i) > 0 \neq y_i = -1
+$$
+
+We have found a dichotomy that cannot be produced for any $d+2$ points with a perceptron hypothesis $\vec{w}$ and conclude that $d+2$ is the first breakpoint.
+
+$$
+\therefore d_{vc} \leq d+1
+$$
+
+Since we have shown that
+
+$$
+d+1 \leq d_{vc} \leq d+1
+$$
+
+it must be that
+
+$$
+d_{vc} = d+1 \quad \blacksquare
+$$
 
 
 

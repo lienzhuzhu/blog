@@ -225,6 +225,6 @@ In fact, this is equal to the worst case upper bound, because chances are $\exis
 
 The lower bound must be at least the maximum VC dimension of the hypothesis sets.
 
-We might think that the $d_{vc}(\bigcap^K\mathcal{H}\_k) = \sum^Kd_{vc}(\mathcal{H}\_k)$, but it is easy to imagine two hypothesis sets combining and increasing their collective classification power.
+We might think that the $d_{vc}(\bigcap^K\mathcal{H}\_k) = \sum^{K}d_{vc}(\mathcal{H}\_k)$, but it is easy to imagine two hypothesis sets combining and increasing their collective classification power.
 
 Let our points be in $\mathbb{R}^2$ and we have two hypothesis sets. $\mathcal{H}\_1$ is the set of hypotheses that are vertical lines while $\mathcal{H}\_2$ is the set of hypotheses that are horizontal lines. Individually, the $d_{vc} = 1$, but the union has a VC dimension of $3 > d_{vc}(\mathcal{H}\_1) + d_{vc}(\mathcal{H}\_2)$.
