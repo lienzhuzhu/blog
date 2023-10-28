@@ -20,7 +20,7 @@ I made a small script to do the iterative calculation:
 ```
 
 
-**2.**
+**2. [d]**
 
 For problems 2 and 3 we need to find an explicit form for the Parrondo and Van den Broek and Devroye bounds.
 
@@ -138,9 +138,24 @@ We use these bounds in `hw4/bounds.py`.
 
 For large $N$, `python3 hw4/bounds.py` shows that the Devroye bound is the smallest.
 
+```
+❯ python3 hw4/bounds.py -N 10000
+VC Bound                         0.632174915200836
+Rademacher                       0.3313087859616395
+Parrondo and Van den Broek       0.2236982936807856
+Devroye                          0.2155759485446348
+```
 
 
-**3.**
+**3. [c]**
+
+```
+❯ python3 hw4/bounds.py -N 5
+VC Bound                         13.828161484991483
+Rademacher                       7.048776564183685
+Parrondo and Van den Broek       5.101361981989993
+Devroye                          5.629897473598194
+```
 
 
 **4. [e]**
