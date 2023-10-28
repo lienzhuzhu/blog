@@ -107,4 +107,4 @@ $\therefore$ 9 is the smallest answer out of the choices given.
 
 **10. [b]**
 
-Convince yourself that the concentric circles case is the same as a $1$-interval in a $360\degree$ mirror.
+Convince yourself that the concentric circles case is the same as a $1$-interval revolved around $360\degrees$.
