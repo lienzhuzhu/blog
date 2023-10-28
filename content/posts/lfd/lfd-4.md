@@ -180,3 +180,47 @@ The maximum slope that $a$ could equal is $\pi$, while the most negative slope i
 We use the principle explicitly stated in the lectures: "Match the model complexity to the data resources available".
 
 $h(x) = b$ is too simple, so it has a high bias. $h(x) = ax + b$ achieves better bias with some added model complexity, but this increase in model complexity introduces a killer variance of $1.69$! It is already too complex for this data set, as will any quadratic form. It seems $h(x) = ax$ is the optimal choice out of these options.
+
+
+**8. [c]**
+
+For $N<q$, $m_{\mathcal{H}}(N+1) = 2^N\cdot2 = 2^{N+1}$. However, once $N=q$ 
+$$
+\begin{aligned}
+m_{\mathcal{H}}(N+1)    & = 2^{N+1} - \binom{N}{q} \\\ \\\
+m_{\mathcal{H}}(q+1)    & = 2^{q+1} - \binom{q}{q} \\\ \\\
+                        & = 2^{q+1} - 1 \\\ \\\
+                        & < 2^{q+1}
+\end{aligned}
+$$
+
+Note that for $N=q-1$, $m_{\mathcal{H}}(N+1) = m_{\mathcal{H}}(q)$
+$$
+\begin{aligned}
+m_{\mathcal{H}}(q)      & = 2^{q} - \binom{q-1}{q} \\\ \\\
+                        & = 2^{q} - 0 \\\ \\\
+                        & = 2^{q} \\\ \\\
+\end{aligned}
+$$
+
+Note that $d_{vc} = q$ because of the generous use of $N$. Let $N^\prime = N+1$, then $N^\prime = q+1$ is what I claim to be the first breakpoint. If it weren't then $m_{\mathcal{H}}(N^\prime) = 2^{N^{\prime}}$ but we know it equals $2^{N^\prime} - 1$ from our previous analysis. This is just a way to think about it in case the $N$'s and $N+1$'s were confusing and resulting in an off-by-one error.
+
+
+**9. [b]**
+
+Options [d] and [e] are automatically thrown out because it is very possible that the hypotheses have no common overlap because it just takes one hypothesis to have zero overlap with the others to make the entire intersection the empty set. Therefore, it would be incorrect to place the lower bound at the minimum $d_{vc}$.
+
+The upper bound of option [a] is correct but not tighter than the upper bound from [c]. Imagine $K=2$ and we have hypothesis sets $\mathcal{H}\_1$ and $\mathcal{H}\_2$, and let $d_{vc}(\mathcal{H}\_1) = 5$ while $d_{vc}(\mathcal{H}\_2) = 9$. The intersection of these sets is all hypotheses that are in both $\mathcal{H}\_1$ and $\mathcal{H}\_2$ and because their VC dimensions differ, we know they cannot be completely overlapping, or the same sets, because otherwise they would break at the same $N$. Let all the hypotheses of $\mathcal{H}\_1$ be present in $\mathcal{H}\_2$, _i.e._ $\mathcal{H}\_1 \subset \mathcal{H}\_2$ then
+
+$$
+d_{vc}(\mathcal{H}\_1 \cap \mathcal{H}\_2) = d_{vc}(\mathcal{H}\_1)
+$$
+
+In fact, this is the worst case upper bound, because chances are there are hypotheses in $\mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
+
+
+**10. [e]**
+
+We might think that the $d_{vc}(\bigcap^K\mathcal{H}\_k) = \sum^Kd_{vc}(\mathcal{H}\_k)$, but it is easy to imagine two hypothesis sets combining and increasing their collective classification power.
+
+Let our points be in $\mathbb{R}^2$ and we have two hypothesis sets. $\mathcal{H}\_1$ is the set of hypotheses that are vertical lines while $\mathcal{H}\_2$ is the set of hypotheses that are horizontal lines. Individually, the $d_{vc} = 1$, but the union has a VC dimension of $3 > d_{vc}(\mathcal{H}\_1) + d_{vc}(\mathcal{H}\_2)$.
