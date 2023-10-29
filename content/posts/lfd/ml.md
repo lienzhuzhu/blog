@@ -196,7 +196,7 @@ Because each $\vec{x}$ has $d+1$ features, $\mathbf{X}$ is square. We can choose
 
 Okay, we've established what $\mathbf{X}$, but what question am I trying to answer? The critical question is can we find some hypothesis $\vec{w}$ that will produce any of the possible $2^{d+1}$ $d+1$-dimensional $\vec{y}$ output vectors.
 
-Well, $\mathbf{X}$ reduces to the identity matrix, which means any $\vec{y}$ can be obtained as a linear combination of the columns of $\mathbf{X}$. $\vec{y}$ must be in the column space and must be achievable by any co-efficient vector $\vec{w}$.
+Well, $\mathbf{X}$ reduces to the identity matrix, which means any $\vec{y}$ can be obtained as a linear combination of the columns of $\mathbf{X}$. Therefore, $\vec{y}$ must be in the column space and must be achievable by any co-efficient vector $\vec{w}$.
 
 $$
 \vec{w} = \mathbf{X}^{-1}\vec{y}
