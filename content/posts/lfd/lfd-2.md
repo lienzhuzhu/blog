@@ -14,6 +14,7 @@ tags = ["notes", "ml"]
 
 Refer to the code repository above for problems 1 and 2. Usage: `python3 hw2/coin.py`.
 
+
 <h3>1. [b]</h3>
 
 ```
@@ -48,7 +49,6 @@ $$
 <h3>4. [b]</h3>
 
 When $\lambda = 0.5$, the correspondence between $y$ and $f(\vec{x})$ is basically random.
-
 
 
 For 5-7, use the code linked at the top of this post.
@@ -87,11 +87,35 @@ For 8-10, use the code linked at the top of this post.
 
 <h3>8. [d]</h3>
 
+```
+❯ python3 hw2/transform.py -N 1000
+E_in actual: 0.5050290000
+E_out estimate: 0.5175489999999999
+Average Weights 0.04570844180055819, 0.0016592000474898905, -0.00043616224075597215
+```
+
 `python3 hw2/transform.py -N 1000` has E_in really close to $0.5$.
+
+The graph shows the original data points and the regression line from the last trial.
+
 
 <h3>9. [a]</h3>
 
-`python3 hw2/transform.py -N 1000` has the $1.5$ coefficients on the last two terms which affect the result the most, so I selected [a].
+```
+❯ python3 hw2/transform.py -N 1000 --transform
+E_in actual: 0.1236600000
+E_out estimate: 0.125843
+Average Weights -0.9927863729005009, -0.0003033668427597578, 0.001665119377568957, -0.000659864590567796, 1.5606316940261602, 1.558196435074335
+```
+
+`python3 hw2/transform.py -N 1000 --transform` has the $1.5$ coefficients on the last two terms which affect the result the most, so I selected [a].
+
 
 <h3>10. [b]</h3>
-I get around $0.12$
+
+```
+❯ python3 hw2/transform.py -N 1000 --transform
+E_in actual: 0.1236600000
+E_out estimate: 0.125843
+Average Weights -0.9927863729005009, -0.0003033668427597578, 0.001665119377568957, -0.000659864590567796, 1.5606316940261602, 1.558196435074335
+```
