@@ -243,10 +243,10 @@ y_j     & = \vec{w}^T\vec{x}_j \\\ \\\
 \end{aligned}
 $$
 
-Except that last equality cannot be true! We said this desired dichotomy has $y_i = \textrm{sign}(a_i)$ when $a_i \neq 0$.
+Except that last equality cannot be true! We said this desired dichotomy has $y_i = \textrm{sign}(a_i)$ when $a_i \neq 0$ and $y_j = +1$.
 
 $$
-\therefore \sum\_{i\neq j}a_iy_i = \sum\_{i\neq j}a_i\cdot\textrm{sign}(a_i) > 0 \neq y_i = -1
+\therefore \sum\_{i\neq j}a_iy_i = \sum\_{i\neq j}a_i\cdot\textrm{sign}(a_i) > 0 \neq y_j = -1
 $$
 
 We have found a dichotomy that cannot be produced for any $d+2$ points with a perceptron hypothesis $\vec{w}$ and conclude that $d+2$ is the first breakpoint.
