@@ -13,7 +13,7 @@ The lectures mentioned using the analytic linear regression algorithm to obtain 
 
 The lecture describes the process at a high level but I want to elaborate on what it looks like at a lower level. A problem with two features has points in $\mathbb{R}^2$ and the labels are denoted using plus signs and crosses or whatnot, but when using linear regression we need to consider the label as a real number output. So we do just that and plot the $XY$ plane against +1 and -1 as outputs. Then we fit a plane that goes through the points as best as possible, a plane in this case because now we are in $\mathbb{R}^4$ thanks to the added dimension of the output. But where's our perceptron? We need to take the $Z=0$ plane and intersect it with the plane of best fit to find our perceptron.
 
-That is where the perceptron can be found using linear regression. The intersection of two planes is generally going to be a line, unless they are parallel or have a shared basis.
+That is where the perceptron can be found using linear regression. The intersection of two planes is generally going to be a line, unless they are parallel or have a shared basis. The plane $z = 0$ is the threshold $y = 0$.
 
 
 <h3>Perceptron Weight Vector Is Normal To The Perceptron</h3>
