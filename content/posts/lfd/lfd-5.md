@@ -47,7 +47,73 @@ Just use chain rule.
 
 $$
 \begin{aligned}
-\frac{\partial{E}}{\partial{u}} &= \frac{\partial{E}}{\partial{u}}(ue^v-2ve^{-u})^2 \\\ \\\
-    &= 2(ue^v - 2ve^{-u})(e^v + 2ve^{-u})
-$$
+\frac{\partial{E}}{\partial{u}} & = \frac{\partial{E}}{\partial{u}}(ue^v-2ve^{-u})^2 \\\ \\\
+                                & = 2(ue^v - 2ve^{-u})(e^v + 2ve^{-u})
 \end{aligned}
+$$
+
+Note that for the gradient descent implementation, we will need the other partial derivative as well, but this is just as easily calculated using chain rule, nothing crazy.
+
+
+<h3>5. [d]</h3>
+
+```
+❯ python3 hw5/descent.py
+10
+[0.04473629 0.02395871]
+```
+
+
+<h3>6. [e]</h3>
+
+```
+❯ python3 hw5/descent.py
+10
+[0.04473629 0.02395871]
+```
+
+
+<h3>7. [a]</h3>
+
+```
+❯ python3 hw5/coordinate.py
+[ 6.2970759  -2.85230695]
+0.13981379199615315
+```
+
+
+<h3>8. [d]</h3>
+
+```
+❯ python3 hw5/logistic.py -N 100
+E_out:   0.1042528510662979
+Epochs:  333.6
+```
+
+
+<h3>9. [a]</h3>
+
+```
+❯ python3 hw5/logistic.py -N 100
+E_out:   0.1042528510662979
+Epochs:  333.6
+```
+
+
+<h3>10. [e]</h3>
+
+The update rule for PLA is
+$$
+\vec{w}\_t = \vec{w}\_{t-1} + y_n\vec{x}_n
+$$
+where $(\vec{x}, y)_n$ is the misclassified point.
+
+At first I thought the answer was [b] because the gradient of this error function would yield $-y_n\vec{w}^T\vec{x}\_n$ which would fit with the SGD update rule
+
+$$
+\vec{w}\_t = \vec{w}\_{t-1} + \eta (-\nabla{e(\vec{w})})
+$$
+
+to get the PLA update rule.
+
+But then I remembered, SGD goes over every point, not every point requires an update. So the adjustment must be 0 when the label and signal are in agreement, which is reflected in option [e].
