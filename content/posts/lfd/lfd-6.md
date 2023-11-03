@@ -3,7 +3,7 @@ title = "Learning From Data Problem Set 6"
 date = "2023-11-02T01:43:16-07:00"
 # description = ""
 
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 
@@ -81,5 +81,42 @@ The intersection of these sets will clearly just be the first 3 terms of $\mathc
 
 
 <h3>
-8.
+8. [d]
 </h3>
+
+The operation $w_{ij}^{(l)}x_i^{(l-1)}$ is only used in forward propagation and does not appear in backpropagation.
+
+There are $22$ total unique weights in this network and each will be updated during backpropagation. The $w_{ij}^{(l)}\delta_j^{(l)}$ term is used to get $\delta_i^{(l-1)}$ while $x_i^{(l-1)}\delta_j^{(l)}$ terms are used in the weight update step of SGD.
+
+There are $22$ weights and $2$ types of operations of interest, so we would see $44$ of these operations.
+
+
+<h3>
+9. [a]
+</h3>
+
+We can achieve the minimum number of weights, or connections, by making each hidden layer have a single dimension. This would result in $10$ weights between the input layer and the first hidden layer, with $36$ weights from the first hidden layer to the final output layer.
+
+
+<h3>
+10. [e]
+</h3
+
+If laying all the units in a line yields the minimum, surely the opposite would give us the maximum right? Not exactly. If we have one hidden layer with $36$ units, then we get
+$$
+10 \times 35 + 36 \times 1 = 350 + 36 = 386 \textrm{ weights}
+$$
+
+which is far from what we can get with two hidden layers, each with $18$ units each
+
+$$
+10 \times 17 + 18 \times 17 + 18 \times 1 = 170 + 306 + 18 = 494 \textrm{ weights}
+$$
+
+So, I brute forced from two layers and reached $510$ with $22$ units in the first hidden layer and $14$ in the second
+
+$$
+10\times21 + 22\times13 + 14 = 210 + 286 + 14 = 510 \textrm{ weights}
+$$
+
+I have no idea how to do this analytically with optimization. Luckily, $510$ is the largest answer choice.
