@@ -66,7 +66,6 @@ This is just enough regularization.
 When $k=-1$, we get an $E_{out}$ of around $0.056$.
 
 
-
 <h3>
 7. [c]
 </h3>
@@ -79,3 +78,8 @@ $$
 $$
 
 The intersection of these sets will clearly just be the first 3 terms of $\mathcal{H}(10, 0, 3)$, which is the same as $\mathcal{H}_2$. The union of these is not $\mathcal{H}_4$ because that would require an $L_4$ term to survive, but it perishes in the union.
+
+
+<h3>
+8.
+</h3>
