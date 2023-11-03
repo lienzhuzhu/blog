@@ -119,4 +119,15 @@ $$
 10\times21 + 22\times13 + 14 = 210 + 286 + 14 = 510 \textrm{ weights}
 $$
 
-I have no idea how to do this analytically with optimization. Luckily, $510$ is the largest answer choice.
+Note that the bias term has no weights going into it.
+
+I have no idea how to do this analytically with optimization. Luckily, $510$ is the largest answer choice and using quadratic programming we get the following solution:
+
+```
+❯ python3 hw6/edges.py
+L1 =  22
+L2 =  14
+Z =  510
+```
+
+Though we get kind of lucky here because this is not linear quadratic programming applied to a linear quadratic programming problem.
