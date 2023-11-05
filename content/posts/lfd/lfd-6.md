@@ -9,6 +9,8 @@ tags = ["notes", "ml"]
 
 [PDF of problems](https://work.caltech.edu/homework/hw6.pdf)
 
+[Code Repository](https://github.com/lienzhuzhu/lfd)
+
 
 <h3>
 1. [b]
