@@ -34,7 +34,7 @@ Q = 7:  K = 10. E_val = 0.100 E_out = 0.072     K = 25: E_val = 0.120 E_out = 0.
 6. [d]
 </h3>
 
-We can calculate this analytically. Let $X \sim \textrm{Uniform}(0,1)$ and $Y \sim \textrm{Uniform}(0,1)$. Then $Z=min(X, Y)$ and
+We can calculate this analytically. Let $X \sim \textrm{Uniform}(0,1)$ and $Y \sim \textrm{Uniform}(0,1)$. Then $Z=\textrm{min}(X, Y)$ and
 
 $$
 \begin{aligned}
