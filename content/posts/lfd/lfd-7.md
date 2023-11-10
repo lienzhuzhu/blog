@@ -146,10 +146,15 @@ At this point I just plugged into a graphing calculator and found the positive z
 
 ```
 ❯ python3 hw7/lin_svm.py -N 10
-PLA E_out:               0.103712
-SVM E_out:               0.08633099999999999
-Support Vectors:         2.835
-SVM won 0.625 times
+PLA E_out:               0.10109299999999999
+SVM E_out:               0.088658
+Primal E_out:            0.088655
+
+Support Vectors:         2.84 support vectors
+Primal Vectors:          2.832 support vectors
+
+SVM won                  0.587 times
+Primal won               0.587 times
 ```
 
 
@@ -159,13 +164,18 @@ SVM won 0.625 times
 
 ```
 ❯ python3 hw7/lin_svm.py -N 100
-PLA E_out:               0.013701000000000001
-SVM E_out:               0.010433
-Support Vectors:         2.998
-SVM won 0.617 times
+PLA E_out:               0.013966000000000001
+SVM E_out:               0.010674000000000001
+Primal E_out:            0.010673
+
+Support Vectors:         3.0 support vectors
+Primal Vectors:          2.996 support vectors
+
+SVM won                  0.632 times
+Primal won               0.633 times
 ```
 
-Though, I noticed SVM wins very close to 60% of the time, so it's between [c] and [d].
+Though, I noticed SVM wins very close to 60% of the time, sometimes going under 60%, so it's between [c] and [d].
 
 <h3>
 10. [b]
@@ -173,8 +183,13 @@ Though, I noticed SVM wins very close to 60% of the time, so it's between [c] an
 
 ```
 ❯ python3 hw7/lin_svm.py -N 100
-PLA E_out:               0.013701000000000001
-SVM E_out:               0.010433
-Support Vectors:         2.998
-SVM won 0.617 times
+PLA E_out:               0.013966000000000001
+SVM E_out:               0.010674000000000001
+Primal E_out:            0.010673
+
+Support Vectors:         3.0 support vectors
+Primal Vectors:          2.996 support vectors
+
+SVM won                  0.632 times
+Primal won               0.633 times
 ```
