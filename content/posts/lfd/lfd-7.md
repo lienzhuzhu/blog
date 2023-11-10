@@ -165,6 +165,7 @@ Support Vectors:         2.998
 SVM won 0.617 times
 ```
 
+Though, I noticed SVM wins very close to 60% of the time, so it's between [c] and [d].
 
 <h3>
 10. [b]
