@@ -137,3 +137,43 @@ E_{CV}(h_0) &= E_{CV}(h_1) \\\ \\\
 $$
 
 At this point I just plugged into a graphing calculator and found the positive zero at $\sqrt{9+4\sqrt{6}}$.
+
+
+
+<h3>
+8. [c]
+</h3>
+
+```
+❯ python3 hw7/lin_svm.py -N 10
+PLA E_out:               0.103712
+SVM E_out:               0.08633099999999999
+Support Vectors:         2.835
+SVM won 0.625 times
+```
+
+
+<h3>
+9. [d]
+</h3>
+
+```
+❯ python3 hw7/lin_svm.py -N 100
+PLA E_out:               0.013701000000000001
+SVM E_out:               0.010433
+Support Vectors:         2.998
+SVM won 0.617 times
+```
+
+
+<h3>
+10. [b]
+</h3>
+
+```
+❯ python3 hw7/lin_svm.py -N 100
+PLA E_out:               0.013701000000000001
+SVM E_out:               0.010433
+Support Vectors:         2.998
+SVM won 0.617 times
+```
