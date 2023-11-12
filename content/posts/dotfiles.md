@@ -3,7 +3,7 @@ title = "My Setup"
 date = "2023-08-04T15:09:31-07:00"
 # description = ""
 
-tags = ["engineering",]
+tags = ["engineering"]
 
 draft = true
 +++
