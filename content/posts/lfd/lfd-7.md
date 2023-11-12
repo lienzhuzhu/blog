@@ -3,7 +3,7 @@ title = "Learning From Data Problem Set 7"
 date = "2023-11-04T22:03:50-07:00"
 # description = ""
 
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 

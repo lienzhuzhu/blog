@@ -4,7 +4,7 @@ date = "2023-11-10T17:17:05-08:00"
 # description = ""
 
 draft = true
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 [PDF of problems](https://work.caltech.edu/homework/hw8.pdf)
