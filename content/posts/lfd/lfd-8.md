@@ -78,3 +78,47 @@ With the primal problem solves for the weights and the bias term directly, which
 $$
 2279 - 400 = 1879
 $$
+
+
+<h3>
+5. [d]
+</h3>
+
+```
+❯ python3 hw8/poly_svm.py --digit=1 --other=5
+Q = 2
+C = 0.0001      1 versus 5  E_in: 0.01025  E_out: 0.01651  SVs: 244
+C = 0.0010      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 80
+C = 0.0100      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 34
+C = 0.1000      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 24
+C = 1.0000      1 versus 5  E_in: 0.00384  E_out: 0.01887  SVs: 24
+
+Q = 5
+C = 0.0001      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 26
+C = 0.0010      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 26
+C = 0.0100      1 versus 5  E_in: 0.00512  E_out: 0.01651  SVs: 27
+C = 0.1000      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 24
+C = 1.0000      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 24
+```
+
+
+<h3>
+6. [b]
+</h3>
+
+```
+❯ python3 hw8/poly_svm.py --digit=1 --other=5
+Q = 2
+C = 0.0001      1 versus 5  E_in: 0.01025  E_out: 0.01651  SVs: 244
+C = 0.0010      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 80
+C = 0.0100      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 34
+C = 0.1000      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 24
+C = 1.0000      1 versus 5  E_in: 0.00384  E_out: 0.01887  SVs: 24
+
+Q = 5
+C = 0.0001      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 26
+C = 0.0010      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 26
+C = 0.0100      1 versus 5  E_in: 0.00512  E_out: 0.01651  SVs: 27
+C = 0.1000      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 24
+C = 1.0000      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 24
+```
