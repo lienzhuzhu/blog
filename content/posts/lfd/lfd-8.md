@@ -122,3 +122,63 @@ C = 0.0100      1 versus 5  E_in: 0.00512  E_out: 0.01651  SVs: 27
 C = 0.1000      1 versus 5  E_in: 0.00448  E_out: 0.01887  SVs: 24
 C = 1.0000      1 versus 5  E_in: 0.00448  E_out: 0.01651  SVs: 24
 ```
+
+
+<h3>
+7. [c]
+</h3>
+
+For some reason I get $C=0.01$ as the selected model. Print debugging shows that the two $C$ values are indeed close in validation performance.
+
+```
+❯ python3 hw8/cv_poly_svm.py --digit=1 --other=5
+
+The model with the most selections is C = 0.01
+1 versus 5
+E_cv:   0.004639
+E_out:  0.018868
+SVs:    34
+```
+
+
+<h3>
+8. [c]
+</h3>
+
+```
+❯ python3 hw8/cv_poly_svm.py --digit=1 --other=5
+
+The model with the most selections is C = 0.01
+1 versus 5
+E_cv:   0.004639
+E_out:  0.018868
+SVs:    34
+```
+
+
+<h3>
+9. [e]
+</h3>
+
+```
+❯ python3 hw8/rbf_svm.py --digit=1 --other=5
+C = 0.01        1 versus 5  E_in: 0.00384  E_out: 0.02358  SVs: 406
+C = 1.00        1 versus 5  E_in: 0.00448  E_out: 0.02123  SVs: 31
+C = 100.00      1 versus 5  E_in: 0.00320  E_out: 0.01887  SVs: 22
+C = 10000.00    1 versus 5  E_in: 0.00256  E_out: 0.02358  SVs: 19
+C = 1000000.00  1 versus 5  E_in: 0.00064  E_out: 0.02358  SVs: 17
+```
+
+
+<h3>
+10. [c]
+</h3>
+
+```
+❯ python3 hw8/rbf_svm.py --digit=1 --other=5
+C = 0.01        1 versus 5  E_in: 0.00384  E_out: 0.02358  SVs: 406
+C = 1.00        1 versus 5  E_in: 0.00448  E_out: 0.02123  SVs: 31
+C = 100.00      1 versus 5  E_in: 0.00320  E_out: 0.01887  SVs: 22
+C = 10000.00    1 versus 5  E_in: 0.00256  E_out: 0.02358  SVs: 19
+C = 1000000.00  1 versus 5  E_in: 0.00064  E_out: 0.02358  SVs: 17
+```
