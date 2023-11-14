@@ -104,3 +104,71 @@ Why the other's are incorrect:
 [c]. I'm not aware of any relation to the VC dimension besides the fact that regularization can decrease the VC dimension since we shift the notion to effective number of parameters. Validation is used to determine constraints.
 
 [d]. Regularization concedes increases in $E_{in}$ for decreases in $E_{out}$.
+
+
+<h3>
+For 7. through 10. use this output.
+</h3>
+
+```
+❯ python3 final/regress.py --digit=1 --other=5
+0 versus all.   E_in: 0.22946  E_out: 0.22770
+1 versus all.   E_in: 0.13770  E_out: 0.13104
+2 versus all.   E_in: 0.10026  E_out: 0.09865
+3 versus all.   E_in: 0.09025  E_out: 0.08271
+4 versus all.   E_in: 0.08943  E_out: 0.09965
+5 versus all.   E_in: 0.07626  E_out: 0.07972
+6 versus all.   E_in: 0.09107  E_out: 0.08470
+7 versus all.   E_in: 0.08847  E_out: 0.07324
+8 versus all.   E_in: 0.07434  E_out: 0.08271
+9 versus all.   E_in: 0.08833  E_out: 0.08819
+
+K = 0.01 Digit 1 versus 5. E_in: 0.03011  E_out: 0.06840
+K = 1.00 Digit 1 versus 5. E_in: 0.03011  E_out: 0.06132
+
+❯ python3 final/regress.py --digit=1 --other=5 --transform
+0 versus all.   E_in: 0.10232  E_out: 0.10663
+1 versus all.   E_in: 0.01234  E_out: 0.02192
+2 versus all.   E_in: 0.10026  E_out: 0.09865
+3 versus all.   E_in: 0.09025  E_out: 0.08271
+4 versus all.   E_in: 0.08943  E_out: 0.09965
+5 versus all.   E_in: 0.07626  E_out: 0.07922
+6 versus all.   E_in: 0.09107  E_out: 0.08470
+7 versus all.   E_in: 0.08847  E_out: 0.07324
+8 versus all.   E_in: 0.07434  E_out: 0.08271
+9 versus all.   E_in: 0.08833  E_out: 0.08819
+
+K = 0.01 Digit 1 versus 5. E_in: 0.00448  E_out: 0.02830
+K = 1.00 Digit 1 versus 5. E_in: 0.00512  E_out: 0.02594
+```
+
+
+<h3>
+7. [d]
+</h3>
+
+8 versus all has $E_{in} = 0.07434$.
+
+
+<h3>
+8. [b]
+</h3>
+
+1 versus all has $E_{out} = 0.02192$ when the transformation is applied.
+
+
+<h3>
+9. [e]
+</h3>
+
+The transformation decreases $E_{out}$ for the 5 versus all classifier from 0.07972 to 0.07922, a marginal improvement.
+
+
+<h3>
+10. [a]
+</h3>
+
+```
+K = 0.01 Digit 1 versus 5. E_in: 0.00448  E_out: 0.02830
+K = 1.00 Digit 1 versus 5. E_in: 0.00512  E_out: 0.02594
+```
