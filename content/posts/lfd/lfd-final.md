@@ -172,3 +172,24 @@ The transformation decreases $E_{out}$ for the 5 versus all classifier from 0.07
 K = 0.01 Digit 1 versus 5. E_in: 0.00448  E_out: 0.02830
 K = 1.00 Digit 1 versus 5. E_in: 0.00512  E_out: 0.02594
 ```
+
+
+<h3>
+11. [c]
+</h3>
+
+First transform each data point using the described transformation, then graph in Desmos, with $x_2$ as the $y-$axis, such that $x_1 = x$ and $x_2 = y$.
+
+The only hyperplane that separates the data correctly is the vertical line $0 = 1 * x + 0 * y + (-0.5)$ which corresponds to choice [c].
+
+<h3>
+12. [c]
+</h3>
+
+```
+❯ python3 final/svm.py
+libsvm: 5
+[0.02 0.01 0.01 0.04 0.   0.   0.  ]
+Using threshold of 0.001
+Dual:   4
+```
