@@ -3,7 +3,7 @@ title = "Learning From Data Book Notes"
 date = "2023-10-18T19:49:57-07:00"
 # description = ""
 
-tags = ["notes"]
+tags = ["notes", "ml"]
 +++
 
 
