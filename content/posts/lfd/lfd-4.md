@@ -10,7 +10,9 @@ tags = ["notes", "ml"]
 
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 
-<h3>1. [d]</h3>
+<h3>
+1. [d]
+</h3>
 
 I made a small script to do the iterative calculation:
 
@@ -20,7 +22,9 @@ I made a small script to do the iterative calculation:
 ```
 
 
-<h3>2. [d]</h3>
+<h3>
+2. [d]
+</h3>
 
 For problems 2 and 3 we need to find an explicit form for the Parrondo and Van den Broek and Devroye bounds.
 
@@ -147,7 +151,9 @@ Devroye                          0.2155759485446348
 ```
 
 
-<h3>3. [c]</h3>
+<h3>
+3. [c]
+</h3>
 
 ```
 ❯ python3 hw4/bounds.py -N 5
@@ -158,31 +164,39 @@ Devroye                          5.629897473598194
 ```
 
 
-<h3>4. [e]</h3>
-
-Use the code linked at the start of the post.
+<h3>
+4. [e]
+</h3>
 
 `python3 hw4/bias.py` shows the average hypothesis has a slope of $1.43$.
 
 
-<h3>5. [b]</h3>
+<h3>
+5. [b]
+</h3>
 
 The bias for this $\bar{g}(x)$ is likely the same as the $\bar{g}(x)$ for $\mathcal{H}_1$ in the book since they seem to be the same form. Of course, this $\mathcal{H}$ where each $h \in \mathcal{H}$ does not have the $y$-intercept parameter and so we would expect its variance to be smaller than that for $\mathcal{H}_1$
 
 
-<h3>6. [a]</h3>
+<h3>
+6. [a]
+</h3>
 
 The maximum slope that $a$ could equal is $\pi$, while the most negative slope is $0$. If the line that goes through $x_1$ and $x_2$ would have a negative slope, the line of best fit through the origin will still have a positive slope less than $\pi$! So we can conclude that if you spin a line about the origin such that it has a slope of $0$ and $\pi$ and everything in between, you can convince yourself it doesn't vary nearly as much as the $\bar{g}(x)$ for $\mathcal{H}_1$, and is going to be close to the variance for $\bar{g}(x)$ of $\mathcal{H}_0$.
 
 
-<h3>7. [b]</h3>
+<h3>
+7. [b]
+</h3>
 
 We use the principle explicitly stated in the lectures: "Match the model complexity to the data resources available".
 
 $h(x) = b$ is too simple, so it has a high bias. $h(x) = ax + b$ achieves better bias with some added model complexity, but this increase in model complexity introduces a killer variance of $1.69$! It is already too complex for this data set, as will any quadratic form. It seems $h(x) = ax$ is the optimal choice out of these options.
 
 
-<h3>8. [c]</h3>
+<h3>
+8. [c]
+</h3>
 
 For $N<q$, $m_{\mathcal{H}}(N+1) = 2^N\cdot2 = 2^{N+1}$. However, once $N=q$ 
 $$
@@ -206,7 +220,9 @@ $$
 Note that $d_{vc} = q$ because of the generous use of $N$. Let $N^\prime = N+1$, then $N^\prime = q+1$ is what I claim to be the first breakpoint. If it weren't then $m_{\mathcal{H}}(N^\prime) = 2^{N^{\prime}}$ but we know it equals $2^{N^\prime} - 1$ from our previous analysis. This is just a way to think about it in case the $N$'s and $N+1$'s were confusing and resulting in an off-by-one error.
 
 
-<h3>9. [b]</h3>
+<h3>
+9. [b]
+</h3>
 
 Think of VC dimension as a sort of measure for a hypothesis set's classification "power" or "ability".
 
@@ -221,7 +237,9 @@ $$
 In fact, this is equal to the worst case upper bound, because chances are $\exists\enspace h \in \mathcal{H_1} \notin \mathcal{H_2}$ which would decrease the VC dimension of the intersection.
 
 
-<h3>10. [e]</h3>
+<h3>
+10. [e]
+</h3>
 
 The lower bound must be at least the maximum VC dimension of the hypothesis sets.
 

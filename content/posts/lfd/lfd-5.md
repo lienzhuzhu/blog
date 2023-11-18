@@ -11,7 +11,9 @@ tags = ["notes", "ml"]
 [Code Repository](https://github.com/lienzhuzhu/lfd)
 
 
-<h3>1. [c]</h3>
+<h3>
+1. [c]
+</h3>
 
 Plugging in the values for $\mathbb{E}[E_{in}(\vec{w})] = \sigma^{2}(1 - \frac{d+1}{N}) \geq 0.008$:
 
@@ -27,7 +29,9 @@ N                               & \geq  45
 $$
 
 
-<h3>2. [d]</h3>
+<h3>
+2. [d]
+</h3>
 
 We need to think about how the features affect the labels of the regions.
 
@@ -36,12 +40,16 @@ For any given point, it seems the closer it is to the $x_1 = 0$ line, the more i
 It also seems the further away from $x_2 = 0$ a point is, the more it tends to be positively labeled, especially if we compare the size of the regions going up and down to infinity. So $\tilde{w}\_2 > 0$.
 
 
-<h3>3. [c]</h3>
+<h3>
+3. [c]
+</h3>
 
 Use the formula $\frac{Q(Q+3)}{2}$ with $Q=4$.
 
 
-<h3>4. [e]</h3>
+<h3>
+4. [e]
+</h3>
 
 Just use chain rule.
 
@@ -55,7 +63,9 @@ $$
 Note that for the gradient descent implementation, we will need the other partial derivative as well, but this is just as easily calculated using chain rule, nothing crazy.
 
 
-<h3>5. [d]</h3>
+<h3>
+Refer to the output for 5 and 6.
+</h3>
 
 ```
 ❯ python3 hw5/descent.py
@@ -63,17 +73,18 @@ Note that for the gradient descent implementation, we will need the other partia
 [0.04473629 0.02395871]
 ```
 
+<h3>
+5. [d]
+</h3>
 
-<h3>6. [e]</h3>
-
-```
-❯ python3 hw5/descent.py
-10
-[0.04473629 0.02395871]
-```
+<h3>
+6. [e]
+</h3>
 
 
-<h3>7. [a]</h3>
+<h3>
+7. [a]
+</h3>
 
 ```
 ❯ python3 hw5/coordinate.py
@@ -82,7 +93,9 @@ Note that for the gradient descent implementation, we will need the other partia
 ```
 
 
-<h3>8. [d]</h3>
+<h3>
+Refer to the output for 8 and 9.
+</h3>
 
 ```
 ❯ python3 hw5/logistic.py -N 100
@@ -90,17 +103,18 @@ E_out:   0.1042528510662979
 Epochs:  333.6
 ```
 
+<h3>
+8. [d]
+</h3>
 
-<h3>9. [a]</h3>
-
-```
-❯ python3 hw5/logistic.py -N 100
-E_out:   0.1042528510662979
-Epochs:  333.6
-```
+<h3>
+9. [a]
+</h3>
 
 
-<h3>10. [e]</h3>
+<h3>
+10. [e]
+</h3>
 
 The update rule for PLA is
 $$
