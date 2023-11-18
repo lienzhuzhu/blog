@@ -254,7 +254,7 @@ Both error values go down.
 
 
 <h3>
-17. 
+17. [c]
 </h3>
 
 ```
@@ -303,3 +303,40 @@ RBF E_out:      0.0545
 ```
 
 The RBF Model has zero in sample error approximately $3\\%$ of the time.
+
+
+<h3>
+19. [b]
+</h3>
+
+We have a Bayesian prior in this problem. Let's use Baye's rule:
+
+$$
+\begin{aligned}
+P(h=f|\mathcal{D}) &= \frac{P(\mathcal{D}|h=f)\cdot P(h=f)}{P(\mathcal{D})} \\\ \\\
+    &\propto P(\mathcal{D}|h=f)\cdot P(h=f)
+\end{aligned}
+$$
+
+We sampled one person and that person ended up having a heart attack. Let's see what information we can draw from this.
+
+We knew long before that $P(h=f)=1$ because $h \sim \textrm{Uniform}(0,1)$. From the data set of size 1 that we sampled, we know that $P(1 Heart Attack Patient | h=f) = h$, since $h(\mathbf{x})$ outputs the probability of a heart attack given some features. Ultimately, we get a modified expression for the posterior
+
+$$
+\begin{aligned}
+P(h=f|\mathcal{D}) &= \frac{P(\mathcal{D}|h=f)\cdot P(h=f)}{P(\mathcal{D})} \\\ \\\
+    &\propto P(\mathcal{D}|h=f)\cdot P(h=f) \\\ \\\
+    &= h \times 1
+\end{aligned}
+$$
+
+This means the posterior is increases linearly with $h$.
+
+
+<h3>
+20. [c]
+</h3>
+
+$g(\mathbf{x})$ has a prediction equal to the average of the predictions outputted by $g_1$ and $g_2$, therefore it makes sense that the deviation of $g(\mathbf{x})$ cannot be worse than the average of the deviations of $g_1(\mathbf{x})$ and $g_2(\mathbf{x})$.
+
+In fact, $g$ is better than the average of $g_1$ and $g_2$ when $g_1(\mathbf{x}) \cdot g_2(\mathbf{x}) < 0$, and is exactly equal to the average when $g_1 \cdot g_2 > 0$.
