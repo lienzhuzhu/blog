@@ -161,8 +161,9 @@ Dual won                 0.625 times
 ```
 
 
+
 <h3>
-9. [d]
+For 9 and 10.
 </h3>
 
 ```
@@ -180,25 +181,13 @@ SVM won                  0.6 times
 Primal won               0.6 times
 Dual won                 0.598 times
 ```
+
+<h3>
+9. [d]
+</h3>
 
 Though, I noticed SVM wins very close to 60% of the time, sometimes going under 60%, so it's between [c] and [d]. The SVM hyperplane obtained from the primal problem solution seems to track the libsvm hyperplane better than the dual solution.
 
 <h3>
 10. [b]
 </h3>
-
-```
-❯ python3 hw7/lin_svm.py -N 100
-PLA E_out:               0.013668000000000003
-SVM E_out:               0.010621
-Primal E_out:            0.010623
-Dual E_out:              0.010740000000000001
-
-Support Vectors:         3.0 support vectors
-Primal Vectors:          2.998 support vectors
-Dual Vectors:            3.151 support vectors
-
-SVM won                  0.6 times
-Primal won               0.6 times
-Dual won                 0.598 times
-```

@@ -132,4 +132,4 @@ L2 =  14
 Z =  510
 ```
 
-Though we get kind of lucky here because this is not linear quadratic programming applied to a linear quadratic programming problem.
+Though we get kind of lucky here because this is non linear quadratic programming applied to a linear quadratic programming problem.
