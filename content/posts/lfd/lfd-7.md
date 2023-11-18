@@ -191,3 +191,5 @@ Though, I noticed SVM wins very close to 60% of the time, sometimes going under 
 <h3>
 10. [b]
 </h3>
+
+[Next Post](../lfd-8)

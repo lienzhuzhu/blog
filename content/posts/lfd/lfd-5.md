@@ -131,3 +131,5 @@ $$
 to get the PLA update rule.
 
 But then I remembered, SGD goes over every point, not every point requires an update. So the adjustment must be 0 when the label and signal are in agreement, which is reflected in option [e].
+
+[Next Post](../lfd-6)

@@ -130,3 +130,5 @@ The graph shows the original data points and the regression line from the last t
 <h3>
 10. [b]
 </h3>
+
+[Next Post](../lfd-3)

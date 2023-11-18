@@ -134,3 +134,5 @@ $\therefore$ 9 is the smallest answer out of the choices given.
 </h3>
 
 Convince yourself that the concentric circles case is just the $1$-interval revolved around $360\degree$.
+
+[Next Post](../lfd-4)

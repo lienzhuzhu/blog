@@ -129,3 +129,5 @@ C = 1000000.00  1 versus 5  E_in: 0.00064  E_out: 0.02358  SVs: 17
 <h3>
 10. [c]
 </h3>
+
+[Next Post](../lfd-final)

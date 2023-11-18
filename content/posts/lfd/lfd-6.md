@@ -133,3 +133,5 @@ Z =  510
 ```
 
 Though we get kind of lucky here because this is non linear quadratic programming applied to a linear quadratic programming problem.
+
+[Next Post](../lfd-7)
