@@ -178,9 +178,9 @@ K = 1.00 Digit 1 versus 5. E_in: 0.00512  E_out: 0.02594
 11. [c]
 </h3>
 
-First transform each data point using the described transformation, then graph in Desmos, with $x_2$ as the $y-$axis, such that $x_1 = x$ and $x_2 = y$.
+First transform each data point using the described transformation, then graph in Desmos, with $x_2$ as the $y$-axis, such that $x_1 = x$ and $x_2 = y$.
 
-The only hyperplane that separates the data correctly is the vertical line $0 = 1 * x + 0 * y + (-0.5)$ which corresponds to choice [c].
+The only hyperplane that separates the data correctly is the vertical line $0 = 1 \cdot x_1 + 0 \cdot x_2 + (-0.5)$ which corresponds to choice [c].
 
 <h3>
 12. [c]
@@ -193,3 +193,113 @@ libsvm: 5
 Using threshold of 0.001
 Dual:   4
 ```
+
+
+
+<h3>
+Refer to the output below for 13 - 16.
+</h3>
+
+RBF Model versus RBF Kernel SVM with $\gamma = 1.5$ and 9 clusters.
+
+```
+❯ python3 final/rbf.py --centers=9 --gamma=1.5
+
+Data was inseparable in Z space 0.0%
+
+SVM Kernel beat RBF Model 84.9%
+
+SVM E_in:       0.0000
+RBF E_in:       0.0352  and was zero 3.1%
+
+SVM E_out:      0.0319
+RBF E_out:      0.0545
+```
+
+RBF Model versus RBF Kernel SVM with $\gamma = 1.5$ and 12 clusters.
+
+```
+❯ python3 final/rbf.py --centers=12 --gamma=1.5
+
+Data was inseparable in Z space 0.0%
+
+SVM Kernel beat RBF Model 79.2%
+
+SVM E_in:       0.0000
+RBF E_in:       0.0231  and was zero 8.5%
+
+SVM E_out:      0.0314
+RBF E_out:      0.0447
+```
+
+<h3>
+13. [a]
+</h3>
+
+Practically zero of the data sets generated were inseparable in the Z space.
+
+<h3>
+14. [e]
+</h3>
+
+<h3>
+15. [d]
+</h3>
+
+<h3>
+16. [d]
+</h3>
+
+Both error values go down.
+
+
+<h3>
+17. 
+</h3>
+
+```
+❯ python3 final/rbf.py --centers=9 --gamma=1.5
+
+Data was inseparable in Z space 0.0%
+
+SVM Kernel beat RBF Model 85.8%
+
+SVM E_in:       0.0000
+RBF E_in:       0.0347  and was zero 3.3%
+
+SVM E_out:      0.0318
+RBF E_out:      0.0539
+
+❯ python3 final/rbf.py --centers=9 --gamma=2
+
+Data was inseparable in Z space 0.0%
+
+SVM Kernel beat RBF Model 87.5%
+
+SVM E_in:       0.0000
+RBF E_in:       0.0399  and was zero 2.3%
+
+SVM E_out:      0.0336
+RBF E_out:      0.0594
+````
+
+
+<h3>
+18. [a]
+</h3>
+
+```
+❯ python3 final/rbf.py --centers=9 --gamma=1.5
+
+Data was inseparable in Z space 0.0%
+
+SVM Kernel beat RBF Model 84.9%
+
+SVM E_in:       0.0000
+RBF E_in:       0.0352  and was zero 3.1%
+
+SVM E_out:      0.0319
+RBF E_out:      0.0545
+```
+
+The RBF Model has zero in sample error approximately $3\\%$ of the time.
