@@ -287,21 +287,7 @@ RBF E_out:      0.0594
 18. [a]
 </h3>
 
-```
-❯ python3 final/rbf.py --centers=9 --gamma=1.5
-
-Data was inseparable in Z space 0.0%
-
-SVM Kernel beat RBF Model 84.9%
-
-SVM E_in:       0.0000
-RBF E_in:       0.0352  and was zero 3.1%
-
-SVM E_out:      0.0319
-RBF E_out:      0.0545
-```
-
-The RBF Model has zero in sample error approximately $3\\%$ of the time.
+Referring to the output from 9., the RBF Model has zero in sample error approximately $3\\%$ of the time.
 
 
 <h3>
@@ -329,7 +315,7 @@ P(h=f|\mathcal{D}) &= \frac{P(\mathcal{D}|h=f)\cdot P(h=f)}{P(\mathcal{D})} \\\ 
 \end{aligned}
 $$
 
-This means the posterior is increases linearly with $h$.
+This means the posterior is increases linearly with $h$ over $[0,1]$.
 
 
 <h3>
