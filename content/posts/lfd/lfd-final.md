@@ -3,7 +3,6 @@ title = "Learning From Data Final"
 date = "2023-11-10T21:59:16-08:00"
 # description = ""
 
-draft = true
 tags = ["notes", "ml"]
 +++
 
