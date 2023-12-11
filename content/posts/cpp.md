@@ -114,8 +114,9 @@ git clone https://github.com/raysan5/raylib.git ~/raylib
 cd ~/raylib/src
 make
 
+sudo mkdir /usr/local/include/raylib
 sudo ln -s ~/raylib/src/libraylib.a /usr/local/lib/libraylib.a
-sudo ln -s ~/raylib/src/raylib.h /usr/local/include/raylib.h
+sudo ln -s ~/raylib/src/raylib.h /usr/local/include/raylib/raylib.h
 ```
 
 
