@@ -60,7 +60,7 @@ From this output, we care about the path: `/opt/homebrew/Cellar/sfml/2.6.0/` as 
 
 ```
 cd /opt/homebrew/Cellar/sfml/2.6.0/
-sudo ln -s $(pwd)/include/SFML /usr/local/lib/SFML
+sudo ln -s $(pwd)/include/SFML /usr/local/include/SFML
 cd /opt/homebrew/Cellar/sfml/2.6.0/lib
 sudo ln -s $(pwd)/*.dylib /usr/local/lib/
 ```
