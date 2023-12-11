@@ -121,7 +121,7 @@ sudo ln -s ~/raylib/src/raylib.h /usr/local/include/raylib/raylib.h
 
 
 ```
-g++ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lraylib my_app.cpp -o app
+g++ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lraylib my_app.cpp -o app -std=c++11
 ```
 
 
@@ -141,7 +141,7 @@ Here's sample code showing a bouncing red ball:
 *
 ********************************************************************************************/
 
-#include "raylib.h"
+#include <raylib/raylib.h>
 
 //------------------------------------------------------------------------------------
 // Program main entry point
