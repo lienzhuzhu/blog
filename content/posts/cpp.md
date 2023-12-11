@@ -6,7 +6,9 @@ date = "2023-08-31T18:00:54-07:00"
 tags = ["engineering"]
 +++
 
-### Eigen
+<h3>
+Eigen
+</h3>
 
 ```
 git clone https://gitlab.com/libeigen/eigen.git ~/eigen
@@ -48,7 +50,9 @@ should produce:
 ```
 
 
-### SFML
+<h3>
+SFML
+</h3>
 
 ```
 brew install sfml
@@ -105,7 +109,9 @@ g++ -o sfml-app sfml.cpp -lsfml-graphics -lsfml-window -lsfml-system
 and you should see a red circle show up on the screen.
 
 
-### raylib
+<h3>
+raylib
+</h3>
 
 ```
 export MACOSX_DEPLOYMENT_TARGET=10.9
@@ -210,3 +216,21 @@ int main(void)
     return 0;
 }
 ```
+
+
+<h3>
+Apple mlx
+</h3>
+
+**Must have XCode IDE**
+
+```
+xcode-select --switch /Applications/Xcode.app/Contents/Developer
+git clone git@github.com:ml-explore/mlx.git mlx && cd mlx
+mkdir -p build && cd build
+cmake .. && make -j
+make test
+make install
+```
+
+This will place the headers and library files in obvious locations.
