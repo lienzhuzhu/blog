@@ -10,16 +10,32 @@ tags = ["engineering"]
 Eigen
 </h3>
 
+Install from Github repo.
+
 ```
 git clone https://gitlab.com/libeigen/eigen.git ~/eigen
-sudo ln -s ~/eigen/Eigen /usr/local/include/Eigen
+sudo ln -s ~/eigen/ /usr/local/include/eigen3
 ```
 
-Then test the installation by putting this code into a file called `eigen.cpp`:
+or use homebrew if on MacOS
+
+```
+brew install eigen
+```
+
+Now, eigen is installed in `/opt/homebrew/Cellar/eigen3` and a link has been created to `/opt/homebrew/include/eigen3`. Now we just need to tell our C++ compiler to look here for header files.
+
+```
+echo 'export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+
+Then, regardless of installation method, test the installation by putting this code into a file called `eigen.cpp`:
 
 ```
 #include <iostream>
-#include <Eigen/Dense>
+#include <eigen3/Eigen/Dense>
  
 using Eigen::MatrixXd;
  
