@@ -76,13 +76,11 @@ brew info sfml
 ```
 
 
-From this output, we care about the path: `/opt/homebrew/Cellar/sfml/2.6.0/` as we will use this to establish symbolic links to the standard include and lib paths.
+After installation, `homebrew` creates symlinks to these locations
 
 ```
-cd /opt/homebrew/Cellar/sfml/2.6.0/
-sudo ln -s $(pwd)/include/SFML /usr/local/include/SFML
-cd /opt/homebrew/Cellar/sfml/2.6.0/lib
-sudo ln -s $(pwd)/*.dylib /usr/local/lib/
+/opt/homebrew/include/
+/opt/homebrew/lib/
 ```
 
 
@@ -118,7 +116,7 @@ int main()
 In whatever directory `sfml.cpp` is located, run the command:
 
 ```
-g++ -o sfml-app sfml.cpp -lsfml-graphics -lsfml-window -lsfml-system
+g++ -o sfml-app sfml.cpp -L/opt/homebrew/lib/ -lsfml-graphics -lsfml-window -lsfml-system
 ./sfml-app
 ```
 
