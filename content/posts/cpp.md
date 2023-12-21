@@ -116,7 +116,7 @@ int main()
 In whatever directory `sfml.cpp` is located, run the command:
 
 ```
-g++ -o sfml-app sfml.cpp -L/opt/homebrew/lib/ -lsfml-graphics -lsfml-window -lsfml-system
+g++ -o sfml-app sfml.cpp -I/opt/homebrew/include/ -L/opt/homebrew/lib/ -lsfml-graphics -lsfml-window -lsfml-system
 ./sfml-app
 ```
 
