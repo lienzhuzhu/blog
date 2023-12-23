@@ -14,21 +14,25 @@ When I watch YouTube videos of other computer scientists and software engineers 
 So, I have decided to work on setting up my own dotfiles more or less from scratch.
 
 
-## Goals
+<h3>
+Goals
+</h3>
 
 - Each application installed must use an easy to read/ modify config file
 - Each application installed must be compatible with MacOS and Ubuntu
-- Write an `install.sh` script
+- Create an idempotent `install.sh` script
 - Minimize platform dependency
 
 
-## Key applications:
+<h3>
+Key applications:
+</h3>
 
 - __Terminal Multiplexor__
 [tmux](https://github.com/tmux/tmux)
 
 - __Terminal Emulator__
-[Alacritty](https://alacritty.org/)
+[Wezterm](https://wezfurlong.org/wezterm/index.html)
 
 - __Shell__
 [zsh](https://zsh.org/)
@@ -40,9 +44,10 @@ So, I have decided to work on setting up my own dotfiles more or less from scrat
 [Starship.rs](https://starship.rs/)
 
 
-## Dependencies
+<h3>
+Dependencies
+</h3>
 
 - Rust
-- Having some Nerd Font installed, I recommend just cloning the entire [repo](https://github.com/ryanoasis/nerd-fonts) and using the installation script
-- Packer 
+- A Nerd Font
 - ripgrep

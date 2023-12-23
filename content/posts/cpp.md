@@ -130,8 +130,8 @@ raylib
 ```
 export MACOSX_DEPLOYMENT_TARGET=10.9
 xcode-select --install # not necessary if already have Xcode IDE installed, or have run this command before
-git clone https://github.com/raysan5/raylib.git ~/raylib
-cd ~/raylib/src
+git clone https://github.com/raysan5/raylib.git <local raylib location>
+cd <local raylib location>/src
 make
 
 sudo mkdir /usr/local/include/raylib
