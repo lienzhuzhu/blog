@@ -67,63 +67,6 @@ should produce:
 
 
 <h3>
-SFML
-</h3>
-
-```
-brew install sfml
-brew info sfml
-```
-
-
-After installation, `homebrew` creates symlinks to these locations
-
-```
-/opt/homebrew/include/
-/opt/homebrew/lib/
-```
-
-
-Now we can test to make sure the library has been set up correctly. Put this code into a file called `sfml.cpp`.
-
-```
-#include <SFML/Graphics.hpp>
-
-int main()
-{
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Red);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-
-    return 0;
-}
-```
-
-In whatever directory `sfml.cpp` is located, run the command:
-
-```
-g++ -o sfml-app sfml.cpp -I/opt/homebrew/include/ -L/opt/homebrew/lib/ -lsfml-graphics -lsfml-window -lsfml-system
-./sfml-app
-```
-
-and you should see a red circle show up on the screen.
-
-
-<h3>
 raylib
 </h3>
 
@@ -232,11 +175,72 @@ int main(void)
 ```
 
 
+
+<h3>
+SFML
+</h3>
+
+```
+brew install sfml
+brew info sfml
+```
+
+
+After installation, `homebrew` creates symlinks to these locations
+
+```
+/opt/homebrew/include/
+/opt/homebrew/lib/
+```
+
+
+Now we can test to make sure the library has been set up correctly. Put this code into a file called `sfml.cpp`.
+
+```
+#include <SFML/Graphics.hpp>
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Red);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}
+```
+
+In whatever directory `sfml.cpp` is located, run the command:
+
+```
+g++ -o sfml-app sfml.cpp -I/opt/homebrew/include/ -L/opt/homebrew/lib/ -lsfml-graphics -lsfml-window -lsfml-system
+./sfml-app
+```
+
+and you should see a red circle show up on the screen.
+
+
+
 <h3>
 Apple mlx
 </h3>
 
 **Must have XCode IDE**
+
+I think just having xcode-select tools is not enough, the full IDE provides some other tools necessary for mlx.
 
 ```
 xcode-select --switch /Applications/Xcode.app/Contents/Developer
