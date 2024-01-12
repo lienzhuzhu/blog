@@ -1,5 +1,5 @@
 +++
-title = "My Setup"
+title = "My Dotfiles"
 date = "2023-08-04T15:09:31-07:00"
 # description = ""
 
@@ -51,3 +51,18 @@ Dependencies
 - Rust
 - A Nerd Font
 - ripgrep
+
+<h3>
+Fonts
+</h3>
+
+Fonts can be installed using homebrew if on MacOS:
+
+```
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```
+
+or directly as zip files from the Nerd Font repo `github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts`.
+
+The best place to store fonts on MacOS is `~/Library/Fonts/`.
