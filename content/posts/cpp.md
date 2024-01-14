@@ -23,12 +23,16 @@ or use homebrew if on MacOS
 brew install eigen
 ```
 
-Now, eigen is installed in `/opt/homebrew/Cellar/eigen3` and a link has been created to `/opt/homebrew/include/eigen3`. Now we just need to tell our C++ compiler to look here for header files.
+Now, eigen is installed in `/opt/homebrew/Cellar/eigen3` and a link has been created to `/opt/homebrew/include/eigen3`. Homebrew doesn't link to the standard include path so we just need to tell our C++ compiler to look here for header files.
+
+I put the following lines in my `.zshrc` file, but you will need to put them in the proper rc file for your shell of choice.
 
 ```
-echo 'export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"' >> ~/.zshrc
-source ~/.zshrc
+CPLUS_INCLUDE_PATH="/usr/local/include/
+export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"'
 ```
+
+The first line that sets `CPLUS_INCLUDE_PATH` is necessary because it seems MacOS drops the standard system paths for some security reason, especially when the compiler is set up with CMake.
 
 
 Then, regardless of installation method, test the installation by putting this code into a file called `eigen.cpp`:
