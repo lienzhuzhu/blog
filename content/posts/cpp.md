@@ -10,11 +10,11 @@ tags = ["engineering"]
 Eigen
 </h3>
 
-Install from Github repo.
+Install from Github repo. My preferred method.
 
 ```
-git clone https://gitlab.com/libeigen/eigen.git ~/eigen
-sudo ln -s ~/eigen/ /usr/local/include/eigen3
+git clone https://gitlab.com/libeigen/eigen.git /path/to/eigen
+sudo ln -s /path/to/eigen/Eigen /usr/local/include/Eigen
 ```
 
 or use homebrew if on MacOS
@@ -33,9 +33,10 @@ export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"'
 ```
 
 The first line that sets `CPLUS_INCLUDE_PATH` is necessary because it seems MacOS drops the standard system paths for some security reason, especially when the compiler is set up with CMake.
+It also seems to make the clangd LSP server behave nicely without the need for a `~/.clangd` file existing.
 
 
-Then, regardless of installation method, test the installation by putting this code into a file called `eigen.cpp`:
+Then, regardless of installation method, test the installation by putting this code into a file called `main.cpp`, though I prefer to use the Github source, so I just `#include Eigen/Dense`:
 
 ```
 #include <iostream>
@@ -58,7 +59,7 @@ int main()
 The following commands:
 
 ```
-g++ eigen.cpp -o eigen-app
+g++ main.cpp -o eigen-app
 ./eigen-app
 ```
 
@@ -77,13 +78,13 @@ raylib
 ```
 export MACOSX_DEPLOYMENT_TARGET=10.9
 xcode-select --install # not necessary if already have Xcode IDE installed, or have run this command before
-git clone https://github.com/raysan5/raylib.git DESIRED_LOCATION
-cd DESIRED_LOCATION/src
+git clone https://github.com/raysan5/raylib.git /path/to/raylib
+cd /path/to/raylib/src
 make
 
 sudo mkdir /usr/local/include/raylib
-sudo ln -s DESIRED_LOCATION/src/libraylib.a /usr/local/lib/libraylib.a
-sudo ln -s DESIRED_LOCATION/src/raylib.h /usr/local/include/raylib/raylib.h
+sudo ln -s /path/to/raylib/src/raylib.h /usr/local/include/raylib/raylib.h
+sudo ln -s /path/to/raylib/src/libraylib.a /usr/local/lib/libraylib.a
 ```
 
 
