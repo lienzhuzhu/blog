@@ -89,7 +89,7 @@ sudo ln -s /path/to/raylib/src/libraylib.a /usr/local/lib/libraylib.a
 
 
 ```
-g++ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lraylib my_app.cpp -o app -std=c++11
+g++ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lraylib my_app.cpp -o app -std=c++17
 ```
 
 
