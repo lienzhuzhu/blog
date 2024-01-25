@@ -5,7 +5,7 @@ date = "2023-08-04T15:09:31-07:00"
 
 tags = ["engineering"]
 
-draft = true
+draft = false
 +++
 
 
@@ -60,8 +60,10 @@ Fonts can be installed using homebrew if on MacOS:
 
 ```
 brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
+brew install font-<font of choice>-nerd-font
 ```
+
+**NOTE**: you may have to experiment with the names.
 
 or directly as zip files from the Nerd Font repo `github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts`.
 
