@@ -5,10 +5,6 @@ Welcome to my blog where I keep my notes.
 
 ### Thoughts to ponder
 
-Stay Hungry. Stay Foolish.
-
-\- Steve Jobs, _Whole Earth Catalog_
-
 Grown-ups never understand anything by themselves, and it is tiresome for children to be always and forever explaining things to them.
 
 \- Antoine de Saint-Exup&eacute;ry, _The Little Prince_
